@@ -1,0 +1,23 @@
+#term{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#term>h1{
+    text-align: center;
+}
+#term>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#term>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#term>p:hover{
+ background-color: black;
+ color: white;
+    
+}

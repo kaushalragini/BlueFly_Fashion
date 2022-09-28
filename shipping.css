@@ -1,0 +1,23 @@
+#shipping{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#shipping>h1{
+    text-align: center;
+}
+#shipping>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#shipping>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#shipping>p:hover{
+ background-color: black;
+ color: white;
+    
+}

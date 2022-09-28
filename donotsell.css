@@ -1,0 +1,23 @@
+#dont-sell{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#dont-sell>h1{
+    text-align: center;
+}
+#dont-sell>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#dont-sell>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#dont-sell>p:hover{
+ background-color: black;
+ color: white;
+    
+}
