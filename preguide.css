@@ -1,0 +1,36 @@
+#guide{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#guide>h1{
+    text-align: center;
+}
+#guide>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#guide>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#guide>p:hover{
+ background-color: black;
+ color: white;
+    
+}
+table{
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 30px;
+    border: solid 1px red;
+}
+th{
+    padding: 0 30px;
+    border: solid 1px red;
+
+}
+
+   

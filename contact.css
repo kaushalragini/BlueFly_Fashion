@@ -1,7 +1,7 @@
 h1{
     text-align: center;
 }
-p{
+.p{
     text-align: left;
     width: 70%;
     margin: auto;
@@ -9,7 +9,7 @@ p{
     font-size: 18px;
 
 }
-#container{
+#containerr{
     grid-template-columns: repeat(1,1fr);
     gap: 100px;
 }
@@ -37,14 +37,22 @@ p{
     margin-top: -70px;
    
 }
-#btn{
+.btnn{
     background-color: black;
     color: white;
     margin-top: 20px;
     padding: 7px;
     height: 40px;
     width: 100px;
+    margin-bottom: 30px;
 }
 #main{
     text-align: center;
+}
+.p{
+    line-height: 25px;
+}
+.p:hover{
+    background-color: black;
+    color: white;
 }

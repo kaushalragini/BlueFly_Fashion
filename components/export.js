@@ -36,16 +36,16 @@ function footer(){
         </div>
       <div id="footer-div">
         <div>
-            <a href="./contact/contact.html">Contack Us</a>
-            <a href="./faq/faq.html">Frequently Asked Questions</a>
-            <a href="./shipping/shipping.html">Shipping & Returns</a>
-            <a href="./preguide/preguide.html">Pre-Owned Guide</a>
+            <a href="contact.html">Contack Us</a>
+            <a href="faq.html">Frequently Asked Questions</a>
+            <a href="shipping.html">Shipping & Returns</a>
+            <a href="preguide.html">Pre-Owned Guide</a>
          </div>
          <div>
-            <a href="./sellon/sellon.html">Sell on Bluefly</a>
-            <a href="./privacypolicy/privacy.html">Privacy Policy</a>
-            <a href="./termcondition/term.html">Terms & Conditions</a>
-            <a href="./donotsellmy/donotsell.html">Do not sell my personal information</a>
+            <a href="sellon.html">Sell on Bluefly</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="term.html">Terms & Conditions</a>
+            <a href="donotsell.html">Do not sell my personal information</a>
          </div>
          <div>
            <p>Subscribe to get exclusive offers on designer brands</p>
@@ -55,8 +55,8 @@ function footer(){
          </div> 
             <div id="logo">
             
-          <a href=""> <img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt=""></a>
-            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt=""></a>
+          <a href="https://instagram.com/bluefly"> <img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt=""></a>
+            <a href="https://www.facebook.com/bluefly"><img src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt=""></a>
           
       </div>
          <div id="below-div">

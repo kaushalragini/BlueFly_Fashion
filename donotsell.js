@@ -1,4 +1,4 @@
-import  footer from 'export.js'
+import  footer from './components/export.js'
 
 let navbar_div = document.getElementById('total-footer');
 
