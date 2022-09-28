@@ -1,0 +1,23 @@
+#privacy{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#privacy>h1{
+    text-align: center;
+}
+#privacy>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#privacy>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#privacy>p:hover{
+ background-color: black;
+ color: white;
+    
+}

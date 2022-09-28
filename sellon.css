@@ -1,0 +1,23 @@
+#sell{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#sell>h1{
+    text-align: center;
+}
+#sell>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#sell>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#sell>p:hover{
+ background-color: black;
+ color: white;
+    
+}
