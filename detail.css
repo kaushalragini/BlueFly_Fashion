@@ -1,0 +1,33 @@
+#main{
+    width:100%;
+    border: 1px solid red;
+    margin:auto;
+    height: auto;
+    display: flex;
+}
+
+#left_box{
+    width: 20%;
+    border: px solid green;
+    display: grid;
+    height: auto;
+}
+
+#left_box>img{
+   border: px solid red;
+   width: 100%;
+ height: auto;
+}
+
+#last{
+  height: 3px;
+}
+#middle{
+    width: 100%;
+    margin-left: 200px;
+    border: 1px solid red;
+}
+
+#last{
+  border: 1px solid red ;
+}
