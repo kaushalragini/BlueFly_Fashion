@@ -71,3 +71,16 @@
         display: flex;
         justify-content: space-between;
     }
+    #atag{
+        border:px solid red;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #atag>a{
+        text-decoration: none;
+        font-size: large;
+        text-decoration-color: #000;
+        color: #000;
+    text-decoration: none;
+    background: transparent;
+    }

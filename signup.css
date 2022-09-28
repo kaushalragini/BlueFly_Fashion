@@ -12,7 +12,6 @@
 #main{
     width: 40%;
     margin: auto;
-    margin-top: 20px;
 }
 #sign{
     border:px solid red;
@@ -41,25 +40,31 @@
     height: 20px;
     font-size: .75em;
     border: px solid red;
+    font-family: Futura,sans-serif;
+    letter-spacing: .025em;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
     }
     #sign>button{
-          
+      
     background: #111111;
-    border: 1px solid black;
-    width: 100%;
-    height: 50px;
-    font-size: 15px;
-    color: #fff;
-    margin-top: 20px;
-    line-height: 1.42;
-text-decoration: none;
-text-align: center;
-white-space: normal;
-font-size: 13px;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: .3em;
-font-family: Futura,sans-serif;
+        border: 1px solid black;
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 20px;
+        line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-family: Futura,sans-serif;
     }
     #btn{
         margin-top: 30px;
@@ -88,3 +93,4 @@ font-family: Futura,sans-serif;
    
   
     }
+   
