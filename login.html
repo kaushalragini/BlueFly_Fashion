@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="login.css">
-</head>
-<body>
-  <h1 id="create">LOGIN</h1>
-  <div id="main">
-  <div id="login">
-    <p>Email</p> 
-    <input type="email" id="email" value=>
-    <div id="fpass">
-      <p>Password</p>
-      <p>Forgot password?</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./images/bluflylogo.jpeg" />
 
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="export.css" />
+  </head>
+  <body>
+    <div id="nav_header"></div>
+    <h1 id="create">LOGIN</h1>
+    <div id="main">
+      <div id="login">
+        <p>Email</p>
+        <input type="email" id="email" value=>
+        <div id="fpass">
+          <p>Password</p>
+          <p>Forgot password?</p>
+        </div>
+
+        <input type="password" id="password" value="" />
+
+        <button onclick="login()">Sign In</button>
+        <div id="atag">
+          <a href="signup.html">Create account</a>
+        </div>
+      </div>
     </div>
-
-     
-     <input type="password" id="password" value="">
-     
-     <button onclick="login()"> Sign In</button>
-    <div id="atag">
-    <a href="signup.html">Create account</a>
-  </div>
-</div>
-</div>
-</body>
+    <div id="page_footer"></div>
+  </body>
 </html>
 <script src="login.js"></script>
+<script type="module">
+  import { headerHtml } from "./components/header.js";
+  document.querySelector("#nav_header").innerHTML = headerHtml();
+</script>
+
+<script type="module">
+  import footer from "./components/export.js";
+  document.querySelector("#page_footer").innerHTML = footer();
+</script>
