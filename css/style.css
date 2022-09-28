@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+  
 }
 #manue{
     width: 100%;
@@ -137,5 +138,25 @@
     padding-left: 30px;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#fb{
+    border: 0px solid red;
+    display: flex;
+    padding-left: 500px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+#icon{
+    display: flex;
+    gap: 30px;
+    border: 0px solid blue;
+}
+#icon>div{
+    border: 0px solid red;
+    width: 50px;
+
     
 }
