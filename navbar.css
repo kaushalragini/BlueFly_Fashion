@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  
+  
 }
 #manue {
   width: 100%;
@@ -18,6 +20,16 @@
       /* color: #8c2121; */
       /* box-shadow: 0 0 1px #0003; */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+ 
+
+}
+#nav_header{
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+
+  
+
 }
 .container {
   position: relative;
@@ -46,7 +58,10 @@
   visibility: hidden;
   transition: 1s;
   padding-bottom: 30px;
-  padding-top: 30px;
+  
+  border: 0px solid red;
+  
+  background-color: #fff;
 }
 .container ul li:hover .meg {
   opacity: 1;
@@ -134,10 +149,8 @@
   gap: 20px;
   height: 100%;
   padding-top: 30px;
-
   padding-left: 30px;
-
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #fb {
   border: 0px solid red;
@@ -152,12 +165,18 @@
 }
 #icon {
   display: flex;
-  gap: 0px;
+  gap: 1px;
   border: 0px solid blue;
+  width: 300px;
+  justify-content: space-evenly;
+  
+  
 }
-#icon > div {
+#icon > div >img{
   border: 0px solid red;
-  width: 50px;
+  width: 40px;
+  height: 40px;
+
 }
 .bllogo {
   width: 150px;
@@ -173,4 +192,8 @@
   
     font-family: sans-serif;
     font-weight: normal;
+  }
+  #bottomblack{
+    padding: 6px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
