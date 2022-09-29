@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="export.css">
-    <link rel="stylesheet" href="donotsell.css">
-</head>
-<body>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="export.css" />
+    <link rel="stylesheet" href="donotsell.css" />
+    <script
+    src="https://kit.fontawesome.com/18dcf284b5.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div id="nav_header"></div>
     <div id="dont-sell">
-        <h1>DO NOT SELL MY PERSONAL INFORMATION</h1>
-        <h1>YOUR RIGHTS UNDER THE CALIFORNIA CONSUMER PRIVACY ACT</h1>
-        <p>The California Consumer Privacy Act (CCPA) provides you with rights regarding how your data or personal information is treated. Under the legislation, California residents can choose to opt out of the “sale” of their personal information to third parties. Based on the CCPA definition, “sale” refers to data collection for the purpose of creating advertising and other communications. Learn more about CCPA and your privacy rights.</p>
-        <h4>How to opt out</h4>
-        <p>By clicking on the link below, we will no longer collect or sell your personal information. This applies to both third-parties and the data we collect to help personalize your experience on our website or through other communications. For more information, view our privacy policy.</p>
-        <p>To be eligible to opt-out, you must be browsing from California.</p>
+      <h1>DO NOT SELL MY PERSONAL INFORMATION</h1>
+      <h1>YOUR RIGHTS UNDER THE CALIFORNIA CONSUMER PRIVACY ACT</h1>
+      <p>
+        The California Consumer Privacy Act (CCPA) provides you with rights
+        regarding how your data or personal information is treated. Under the
+        legislation, California residents can choose to opt out of the “sale” of
+        their personal information to third parties. Based on the CCPA
+        definition, “sale” refers to data collection for the purpose of creating
+        advertising and other communications. Learn more about CCPA and your
+        privacy rights.
+      </p>
+      <h4>How to opt out</h4>
+      <p>
+        By clicking on the link below, we will no longer collect or sell your
+        personal information. This applies to both third-parties and the data we
+        collect to help personalize your experience on our website or through
+        other communications. For more information, view our privacy policy.
+      </p>
+      <p>To be eligible to opt-out, you must be browsing from California.</p>
     </div>
 
-
     <div id="total-footer"></div>
-    
-</body>
+  </body>
 </html>
-<script  type="module" src="donotsell.js">
-
+<script type="module">
+  import { headerHtml ,headerJS } from "./components/header.js";
+  document.querySelector("#nav_header").innerHTML = headerHtml();
+  headerJS();
 </script>
+<script type="module" src="donotsell.js"></script>

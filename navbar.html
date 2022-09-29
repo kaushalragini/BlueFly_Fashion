@@ -15,8 +15,10 @@
     <div id="nav_header"></div>
   </body>
 </html>
-<script src="navbar.js"></script>
+
 <script type="module">
-  import { headerHtml } from "./components/header.js";
+  import { headerHtml, headerJS } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  headerJS();
 </script>
+<!-- <script src="navbar.js"></script> -->

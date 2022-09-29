@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/18dcf284b5.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="export.css">
     <link rel="stylesheet" href="shipping.css">
 </head>
 <body>
 
-
+    <div id="nav_header"></div>
     <div id="shipping">
         <h1>SHIPPING</h1>
         <h4>Where do you ship to?</h4>
@@ -72,3 +77,8 @@
 <script  type="module" src="shipping.js">
 
 </script>
+<script type="module">
+    import { headerHtml, headerJS } from "./components/header.js";
+    document.querySelector("#nav_header").innerHTML = headerHtml();
+    headerJS();
+  </script>

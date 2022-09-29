@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="./images/bluflylogo.jpeg" />
-
+    <script
+    src="https://kit.fontawesome.com/18dcf284b5.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="export.css" />
@@ -36,8 +39,9 @@
 </html>
 <script src="login.js"></script>
 <script type="module">
-  import { headerHtml } from "./components/header.js";
+  import { headerHtml , headerJS} from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  headerJS()
 </script>
 
 <script type="module">
