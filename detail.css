@@ -1,39 +1,37 @@
-#maindiv{
-  display:flex;
+#maindiv {
+  display: flex;
 }
-#firstdiv{
-border: px solid red;
-width: 76px;
-height: 95px;
-animation: fade-in 1s cubic-bezier(.26,.54,.32,1) 0s forwards;
-cursor: pointer;
+#firstdiv {
+  border: px solid red;
+  width: 76px;
+  height: 95px;
+  animation: fade-in 1s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
+  cursor: pointer;
 }
-#firstdiv>img{
+#firstdiv > img {
   width: 100%;
   height: 95px;
-  
 }
 
-#firstdiv:hover{
+#firstdiv:hover {
   border: 2px solid black;
 }
-#bigimg>img{
+#bigimg > img {
   width: 80%;
   height: auto;
- margin: auto;
-justify-content: center;
-display: flex;
-
+  margin: auto;
+  justify-content: center;
+  display: flex;
 }
-#bigimg{
-  border:px solid red;
-  margin:auto;
+#bigimg {
+  border: px solid red;
+  margin: auto;
   width: 809px;
   height: 511px;
   align-items: center;
- margin-bottom: 640px;
+  margin-bottom: 640px;
 }
-#gucchih3{
+#gucchih3 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -41,22 +39,22 @@ display: flex;
   text-decoration: none;
   background: transparent;
   box-sizing: border-box;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   margin-bottom: 0px;
 }
-#gucchih1{
+#gucchih1 {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   font-size: 30px;
   margin-bottom: 10px;
   word-wrap: break-word;
-  font-family: Tiemann,serif;
+  font-family: Tiemann, serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 1;
@@ -64,7 +62,7 @@ display: flex;
   margin: 0 0 15px;
   color: #000;
 }
-.span1{
+.span1 {
   padding-right: 5px;
   display: inline-block;
   text-decoration: line-through;
@@ -73,14 +71,14 @@ display: flex;
   font-size: 18px;
   box-sizing: border-box;
   font-weight: 400;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-.span2{
+.span2 {
   padding-right: 5px;
   display: inline-block;
   color: #1c1d1d;
@@ -88,19 +86,19 @@ display: flex;
   font-size: 18px;
   box-sizing: border-box;
   font-weight: 400;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-.span3{
+.span3 {
   color: #ff4e4e;
   white-space: nowrap;
   font-size: 13.6px;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -110,60 +108,60 @@ display: flex;
   text-align: center;
   font-size: 18px;
 }
-.p{
+.p {
   color: red;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 13.6px;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   font-size: 18px;
 }
-.p1{
+.p1 {
   font-size: 13.6px;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   font-weight: 400;
-  color: #000; 
+  color: #000;
 }
-.span4{
+.span4 {
   text-transform: none;
   display: block;
-  font-size: .75em;
-  
+  font-size: 0.75em;
+
   list-style: none;
-  font-family: Futura,sans-serif;
+  font-family: Futura, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   font-weight: 400;
 }
-#label1{
-  color:#000;
+#label1 {
+  color: #000;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 13.6px;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-#label2{
+#label2 {
   box-shadow: 0 0 0 2px #000;
   font-size: 13.6px;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   position: relative;
   display: inline-block;
@@ -178,7 +176,7 @@ display: flex;
   color: #000;
   margin-top: 4px;
 }
-hr{
+hr {
   margin: 25px auto;
   height: 1px;
   border: 0;
@@ -190,29 +188,29 @@ hr{
   margin-inline-start: auto;
   margin-inline-end: auto;
 }
-#lebal3>img{
-border-radius: 100%;
-background-color: beige;
-width: 40px;
-height: 40px;
-border: 2px solid black;
+#lebal3 > img {
+  border-radius: 100%;
+  background-color: beige;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
 }
 
-#beige{
+#beige {
   text-transform: none;
   font-weight: 400;
   letter-spacing: 0;
-  font-size: .75em;
-  font-family: Futura,sans-serif;
+  font-size: 0.75em;
+  font-family: Futura, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-#ATC{
+#ATC {
   position: relative;
   overflow: hidden;
-  transition: background .2s ease 0s;
+  transition: background 0.2s ease 0s;
   width: 100%;
   padding: 13px 20px;
   font-size: 11px;
@@ -222,7 +220,7 @@ border: 2px solid black;
   white-space: normal;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .3em;
+  letter-spacing: 0.3em;
   display: inline-block;
   min-width: 90px;
   vertical-align: middle;
@@ -232,13 +230,13 @@ border: 2px solid black;
   background: #111111;
   margin-top: 5px;
 }
-#h4{
+#h4 {
   color: red !important;
   font-weight: 400;
 }
-#h1hu{
+#h1hu {
   margin-bottom: 0;
-  font-family: Tiemann,serif;
+  font-family: Tiemann, serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 1;
@@ -250,50 +248,50 @@ border: 2px solid black;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-#maintwo{
+#maintwo {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
-#maintwo>div{
-  border:px solid red;
-width: 100%;
-height: 343px;
-position: relative;
-overflow: hidden;
-color: #000;
-font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+#maintwo > div {
+  border: px solid red;
+  width: 100%;
+  height: 343px;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-#maintwo>div>img{
+#maintwo > div > img {
   width: 143px;
   height: 143px;
   margin: auto;
- justify-content: center;
- display: flex;
+  justify-content: center;
+  display: flex;
 }
-#maintwo>div>h3{
+#maintwo > div > h3 {
   width: 243px;
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-align: center;
   position: relative;
   padding: 10px 0 6px;
   line-height: 1.5;
   font-weight: 400;
   color: #000;
-  font-family: Futura,sans-serif;
+  font-family: Futura, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   margin: auto;
 }
-#firstspan{
+#firstspan {
   padding-right: 5px;
 
   display: inline-block;
@@ -302,14 +300,14 @@ font-family: Futura,sans-serif;
   font-size: 14px;
   box-sizing: border-box;
   font-weight: 400;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
-#secspan{
+#secspan {
   padding-right: 5px;
   display: inline-block;
   color: #1c1d1d;
@@ -317,19 +315,19 @@ font-family: Futura,sans-serif;
   font-size: 14px;
   box-sizing: border-box;
   font-weight: 400;
-  font-family: Futura,sans-serif;
-  letter-spacing: .025em;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.025em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
 }
 
-#thirdspan{
+#thirdspan {
   color: #ff4e4e;
   white-space: nowrap;
   font-size: 14px;
-  font-family: Futura,sans-serif;
+  font-family: Futura, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -337,5 +335,37 @@ font-family: Futura,sans-serif;
   font-weight: 400;
   box-sizing: border-box;
   text-align: center;
-  
+}
+#main {
+  width: 100%;
+  border: 1px solid red;
+  margin: auto;
+  height: auto;
+  display: flex;
+}
+
+#left_box {
+  width: 20%;
+  border: px solid green;
+  display: grid;
+  height: auto;
+}
+
+#left_box > img {
+  border: px solid red;
+  width: 100%;
+  height: auto;
+}
+
+#last {
+  height: 3px;
+}
+#middle {
+  width: 100%;
+  margin-left: 200px;
+  border: 1px solid red;
+}
+
+#last {
+  border: 1px solid red;
 }

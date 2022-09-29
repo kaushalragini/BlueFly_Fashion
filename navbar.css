@@ -1,35 +1,28 @@
 * {
   margin: 0px;
   padding: 0px;
-  
-  
 }
 #manue {
   width: 100%;
   border: 0px solid red;
-      /* width: 80%; */
-      display: flex;
-      width: 80%;
-      border: 0px solid red;
-      /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
-      margin: auto;
-      justify-content: space-around;
-      font-size: 13px;
-      font-family: serif;
-      height: 64px;
-      /* color: #8c2121; */
-      /* box-shadow: 0 0 1px #0003; */
+  /* width: 80%; */
+  display: flex;
+  width: 80%;
+  border: 0px solid red;
+  /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
+  margin: auto;
+  justify-content: space-around;
+  font-size: 13px;
+  font-family: serif;
+  height: 64px;
+  /* color: #8c2121; */
+  /* box-shadow: 0 0 1px #0003; */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
- 
-
 }
-#nav_header{
+#nav_header {
   position: fixed;
   background-color: #fff;
   width: 100%;
-
-  
-
 }
 .container {
   position: relative;
@@ -58,10 +51,11 @@
   visibility: hidden;
   transition: 1s;
   padding-bottom: 30px;
-  
+
   border: 0px solid red;
-  
+
   background-color: #fff;
+  padding-top: 30px;
 }
 .container ul li:hover .meg {
   opacity: 1;
@@ -150,7 +144,7 @@
   height: 100%;
   padding-top: 30px;
   padding-left: 30px;
- font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #fb {
   border: 0px solid red;
@@ -161,7 +155,7 @@
   padding-bottom: 0px;
   box-shadow: 0 0 1px #0003;
   /* box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, */
-    /* rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
+  /* rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
 }
 #icon {
   display: flex;
@@ -169,31 +163,36 @@
   border: 0px solid blue;
   width: 300px;
   justify-content: space-evenly;
-  
-  
 }
-#icon > div >img{
+#icon > div > img {
   border: 0px solid red;
   width: 40px;
   height: 40px;
 
+  gap: 0px;
+  border: 0px solid blue;
+}
+#icon > div {
+  border: 0px solid red;
+  width: 50px;
 }
 .bllogo {
   width: 150px;
   height: 25px;
 }
 #bottomblack {
-    width: 100;
-    height: 3   0px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    align-items: center;
-  
-    font-family: sans-serif;
-    font-weight: normal;
-  }
-  #bottomblack{
-    padding: 6px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+  width: 100;
+  height: 3 0px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-weight: normal;
+}
+#bottomblack {
+  padding: 6px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

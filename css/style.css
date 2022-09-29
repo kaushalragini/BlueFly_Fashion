@@ -1,169 +1,155 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    
-    
-  
+* {
+  margin: 0px;
+  padding: 0px;
 }
-#manue{
-    width: 100%;
-    border: 0px solid red;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+#manue {
+  width: 100%;
+  border: 0px solid red;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.container{
-    position: relative;
-    margin: auto;
-  
-   
+.container {
+  position: relative;
+  margin: auto;
 }
-.container>ul{
-    display: flex;
-   
-    
-    
+.container > ul {
+  display: flex;
+}
+.container > ul > li {
+  padding: 30px;
+  list-style: none;
+}
+.container > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+.meg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 120%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  left: 0%;
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border: 0px solid red;
+}
+.container ul li:hover .meg {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+#box1 {
+  border: 0px solid red;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+  height: 100%;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sp {
+  padding-bottom: 20px;
+}
+#box2 {
+  border: 0px solid blue;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  gap: 140px;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#box3 {
+  border: 0px solid blue;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-evenly;
+  gap: 100px;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#box4 {
+  border: 0px solid red;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+  height: 100%;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#box5 {
+  border: 0px solid red;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+  height: 100%;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#box6 {
+  border: 0px solid blue;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-evenly;
+  gap: 100px;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#box7 {
+  border: 0px solid red;
+  display: flex;
+  width: 10%;
+  margin: auto;
+  justify-content: space-between;
+  height: 100%;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#box8 {
+  border: 0px solid red;
+  display: flex;
+  width: 30%;
+  margin: auto;
+  gap: 20px;
+  height: 100%;
+  padding-top: 30px;
 
-}
-.container>ul>li{
-   padding: 30px;
-   list-style: none;
+  padding-left: 30px;
 
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.container>ul>li>a{
-    color: black;
-    text-decoration: none;
+#fb {
+  border: 0px solid red;
+  display: flex;
+  padding-left: 500px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
-.meg{
-    position: absolute;
-    width: 100%;
-    height:auto;
-    top: 120%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    left: 0%;
-    right: 0px;
-    opacity: 0;
-    visibility: hidden;
-    transition:1s;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    border: 0px solid red;
-
+#icon {
+  display: flex;
+  gap: 30px;
+  border: 0px solid blue;
 }
-.container ul li:hover .meg{
-    opacity: 1;
-    visibility:visible;
-    top: 100%;
+#icon > div > img {
+  border: 0px solid red;
+  width: 50px;
+  width: 20px;
+  padding-left: 90px;
 }
-#box1{
-    border: 0px solid red;
-    display: flex;
-    width: 40%;
-    margin: auto;
-    justify-content: space-between;
-    height: 100%;
-    gap: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.sp{
-    padding-bottom: 20px;
-}
-#box2{
-    border: 0px solid blue;
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-    gap: 140px;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#box3{
-    border: 0px solid blue;
-    display: flex;
-    width: 70%;
-    margin: auto;
-    justify-content:space-evenly;
-    gap: 100px;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#box4{
-    border: 0px solid red;
-    display: flex;
-    width: 40%;
-    margin: auto;
-    justify-content: space-between;
-    height: 100%;
-    gap: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#box5{
-    border: 0px solid red;
-    display: flex;
-    width: 40%;
-    margin: auto;
-    justify-content: space-between;
-    height: 100%;
-    gap: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#box6{
-    border: 0px solid blue;
-    display: flex;
-    width: 50%;
-    margin: auto;
-    justify-content:space-evenly;
-    gap: 100px;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#box7{
-    border: 0px solid red;
-    display: flex;
-    width: 10%;
-    margin: auto;
-    justify-content: space-between;
-    height: 100%;
-    gap: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-#box8{
-    border: 0px solid red;
-    display: flex;
-    width: 30%;
-    margin: auto;
-   gap: 20px;
-    height: 100%;
-    padding-top: 30px;
-   
-    padding-left: 30px;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-#fb{
-    border: 0px solid red;
-    display: flex;
-    padding-left: 500px;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-}
-#icon{
-    display: flex;
-    gap: 30px;
-    border: 0px solid blue;
-
-}
-#icon>div>img{
-    border: 0px solid red;
-    width: 50px;
-    width: 20px;
-    padding-left: 90px;
-    
-
-    
+#icon > div {
+  border: 0px solid red;
+  width: 50px;
 }
