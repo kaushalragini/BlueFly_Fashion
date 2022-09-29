@@ -1,0 +1,23 @@
+#faq{
+    margin: auto;
+width: 50%;
+text-align: center;
+}
+#faq>h1{
+    text-align: center;
+}
+#faq>h4{
+    text-align: left;
+background-color: yellow;
+width:fit-content;
+}
+#faq>p{
+    line-height: 25px;
+    text-align: left;
+    
+}
+#faq>p:hover{
+ background-color: black;
+ color: white;
+    
+}
