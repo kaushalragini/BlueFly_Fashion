@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel="stylesheet" href="detail.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
     <div id="maindiv">
-    <div id="productimg"></div>
-    <div id="bigimg"></div>
-    <div id="last">
+      <div id="productimg"></div>
+      <div id="bigimg"></div>
+      <div id="last">
         <h3 id="gucchih3">GUCCI</h3>
-        <h1 id="gucchih1">GUCCI GG MARMONT SMALL MATELASSE LEATHER SHOULDER BAG</h1>
+        <h1 id="gucchih1">
+          GUCCI GG MARMONT SMALL MATELASSE LEATHER SHOULDER BAG
+        </h1>
         <span class="span1">$2,550.00</span>
         <span class="span2">$1,798.99</span>
         <span class="span3">Save 29%</span>
@@ -30,7 +34,11 @@
         </span>
         <label id="label2" for="">Medium</label>
         <p id="beige">COLOR — Beige</p>
-        <label for="beige" id="lebal3"><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1160127531_RLLZ_1_50x.jpg" alt=""></label>
+        <label for="beige" id="lebal3"
+          ><img
+            src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1160127531_RLLZ_1_50x.jpg"
+            alt=""
+        /></label>
         <button id="ATC">ADD TO CART</button>
         <h4 id="h4">FINAL SALE: No Returns or Exchanges are accepted.</h4>
         <p id="divp">Usually ships in 1 to 2 business days</p>
@@ -60,15 +68,18 @@
             Sold On Our Site.
           </li>
           <li>SKU: BF-103341347-2DX7</li>
-          <h2>SHARE:<span class="material-icons">
-            email
-            </span></h2>
+          <h2>SHARE:<span class="material-icons"> email </span></h2>
         </ul>
       </div>
-</div>
+    </div>
 
-<h1 id="h1hu">YOU MAY ALSO LIKE</h1>
-<div id="maintwo"></div>
-</body>
+    <h1 id="h1hu">YOU MAY ALSO LIKE</h1>
+    <div id="maintwo"></div>
+  </body>
 </html>
 <script src="detail.js"></script>
+<script type="module">
+  import { headerHtml, headerJS } from "./components/header.js";
+  document.querySelector("#nav_header").innerHTML = headerHtml();
+  headerJS();
+</script>

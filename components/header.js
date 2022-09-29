@@ -39,7 +39,7 @@ const headerHtml = () => {
                                 Coats & Jackets
                                 Dresses
                                 Jeans & Denim
-                                Jumpsuits & Rompers
+                                Jumpsuits & Rompers 
                                 Lingerie & Hosiery
                                 Loungewear & Sleepwear
                                 Pants & Leggings
@@ -323,7 +323,7 @@ const headerHtml = () => {
                 </div>
             
             </li>
-            <li><a href="@">JWALRY&WATCHES</a>
+            <li><a href="@">JEWALRY&WATCHES</a>
                 <div class="meg">
                     <div id="box6">
                         <div>
@@ -434,4 +434,9 @@ const headerHtml = () => {
     `;
 };
 
-export { headerHtml };
+const headerJS = () => {
+  document.querySelector("#usr").addEventListener("click", () => {
+    window.location = "login.html";
+  });
+};
+export { headerHtml, headerJS };

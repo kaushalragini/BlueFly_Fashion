@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>manue</title>
     <link rel="stylesheet" href="navbar.css" />
-   
   </head>
   <body>
     <div id="nav_header"></div>
-    
   </body>
 </html>
 
-<script src="navbar.js"></script>
-<script type="module">
-  import { headerHtml } from "./components/header.js";
-  document.querySelector("#nav_header").innerHTML = headerHtml();
-  function openNav() {
-  document.getElementById("mySidebar").style.width = "350px";
-  document.getElementById("main").style.marginLeft = "0";
-}
+<!-- <script src="navbar.js"></script> -->
 
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
+<script type="module">
+  import { headerHtml, headerJS } from "./components/header.js";
+  document.querySelector("#nav_header").innerHTML = headerHtml();
+
+  headerJS();
+
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "350px";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
 </script>
+<!-- <script src="navbar.js"></script> -->
