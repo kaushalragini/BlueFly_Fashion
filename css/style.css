@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    
+    
   
 }
 #manue{
@@ -45,6 +47,7 @@
     transition:1s;
     padding-bottom: 30px;
     padding-top: 30px;
+    border: 0px solid red;
 
 }
 .container ul li:hover .meg{
@@ -153,10 +156,14 @@
     display: flex;
     gap: 30px;
     border: 0px solid blue;
+
 }
-#icon>div{
+#icon>div>img{
     border: 0px solid red;
     width: 50px;
+    width: 20px;
+    padding-left: 90px;
+    
 
     
 }
