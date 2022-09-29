@@ -1,44 +1,65 @@
-let mainPosts = document.querySelectorAll(".main-post");
-let posts = document.querySelectorAll(".post");
+function topSliderTxt(){
 
-let i = 0;
-let postIndex = 0;
-let currentPost = posts[postIndex];
-let currentMainPost = mainPosts[postIndex];
+    const arr=[
+        "FREE SHIPPING On Order Over $99",
+        "WELCOME TO BLUEFLY: Luxury brands of discounted price",
+        "HAVE A QUESTION: Get Help Form FlyRep@Bluefly.com",
+    ];
 
-let progressInterval = setInterval(progress, 100); // 180
+    let i=0;
 
-function progress() {
-  if (i === 100) {
-    i = -5;
-    // reset progress bar
-    currentPost.querySelector(".progress-bar__fill").style.width = 0;
-    document.querySelector(
-      ".progress-bar--primary .progress-bar__fill"
-    ).style.width = 0;
-    currentPost.classList.remove("post--active");
+    let div=document.getElementById("slider");
 
-    postIndex++;
+    let txt=document.createElement("h4");
+    txt.innerText=arr[0];
 
-    currentMainPost.classList.add("main-post--not-active");
-    currentMainPost.classList.remove("main-post--active");
-
-    // reset postIndex to loop over the slides again
-    if (postIndex === posts.length) {
-      postIndex = 0;
-    }
-
-    currentPost = posts[postIndex];
-    currentMainPost = mainPosts[postIndex];
-  } else {
+    div.append(txt);
     i++;
-    currentPost.querySelector(".progress-bar__fill").style.width = `${i}%`;
-    document.querySelector(
-      ".progress-bar--primary .progress-bar__fill"
-    ).style.width = `${i}%`;
-    currentPost.classList.add("post--active");
 
-    currentMainPost.classList.add("main-post--active");
-    currentMainPost.classList.remove("main-post--not-active");
-  }
+    setInterval(function (){
+        if(i==3){
+            i=0;
+        }
+        txt.innerText=arr[i];
+        i++;
+
+        div.append(txt);
+    }, 2500);
 }
+topSliderTxt();
+
+
+
+function topSliderImg(){
+
+    const arr=[
+        "./slid/1.png",
+        "./slid/2.png",
+        "./slid/3.png",
+        "./slid/4.png",
+        "./slid/5.png",
+        "./slid/6.png",
+        "./slid/7.png",
+    ];
+
+    let i=0;
+
+    let div=document.getElementById("slider1");
+
+    let img=document.createElement("img");
+    img.src=arr[0];
+
+    div.append(img);
+    i++;
+
+    setInterval(function (){
+        if(i==7){
+            i=0;
+        }
+        img.src=arr[i];
+        i++;
+
+        div.append(img);
+    }, 3000);
+}
+topSliderImg();
