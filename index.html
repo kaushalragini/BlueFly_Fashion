@@ -4,22 +4,212 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Document</title>
     <link rel="icon" type="image/x-icon" href="./images/bluflylogo.jpeg" />
 
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="index.css" />
+
     <link rel="stylesheet" href="export.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <script
       src="https://kit.fontawesome.com/18dcf284b5.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <div id="nav_header"></div>
-    <h2>Sliders will come here</h2>
+    <div id="slider"></div>
+
+    <div id="slider1"></div>
+
+    <div id="shop">
+      <a href="#"><img src="./shop/11.png" alt="" /></a>
+      <a href="#"><img src="./shop/12.png" alt="" /></a>
+      <a href="#"><img src="./shop/13.png" alt="" /></a>
+    </div>
+
+    <div id="heading">
+      <h1>SHOP BY CATEGORY</h1>
+    </div>
+
+    <div id="category">
+      <div>
+        <a href="#"><img src="./category/1.png" alt="" /></a>
+        <p>DRESSES</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/2.png" alt="" /></a>
+        <p>PUMPS & HEELS</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/3.png" alt="" /></a>
+        <p>HANDBAGS</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/4.png" alt="" /></a>
+        <p>SUNGLASSES</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/5.png" alt="" /></a>
+        <p>WOMEN'S SNEAKERS</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/6.png" alt="" /></a>
+        <p>MEN'S SNEAKERS</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/7.png" alt="" /></a>
+        <p>MEN'S T-SHIRTS</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/8.png" alt="" /></a>
+        <p>WOMEN'S TOPS</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/9.png" alt="" /></a>
+        <p>WOMEN'S DENIM</p>
+      </div>
+      <div>
+        <a href="#"><img src="./category/10.png" alt="" /></a>
+        <p>JEWELRY</p>
+      </div>
+    </div>
+
+    <div id="slider2"></div>
+
+    <div id="heading1">
+      <h1>NEW ARRIVALS</h1>
+      <button><a href="#">VIEW ALL</a></button>
+    </div>
+
+    <div id="newArrivals">
+      <div>
+        <a href="#"><img src="./new arrivals/1.png" alt="" /></a>
+        <p>
+          OFF-WHITE OUT OF OFFICE PATENT SNEAKER $600 $499.99
+          <span>Save 17%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./new arrivals/2.png" alt="" /></a>
+        <p>
+          SAINT LAURENT LOU MINI MATELASSE LEATHER CROSSBODY, BLACK $1450
+          $1,309.99 <span>Save 10%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./new arrivals/3.png" alt="" /></a>
+        <p>
+          ML MONIQUE LHUILLIER JACQUARD MIDI DRESS $595 $299.99
+          <span>Save 50%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./new arrivals/4.png" alt="" /></a>
+        <p>
+          BOTTEGA VENETA PADDED LEATHER SANDAL $890 $779.99
+          <span>Save 12%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./new arrivals/5.png" alt="" /></a>
+        <p>
+          MCQ BY ALEXANDER MCQUEEN LOGO RELAXED FIT HOODIE $365 $259.99
+          <span>Save 29%</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="heading2">
+      <h1>TRENDING NOW</h1>
+      <button><a href="#">VIEW ALL</a></button>
+    </div>
+    <div id="trandingNow">
+      <div>
+        <a href="#"><img src="./tranding now/1.png" alt="" /></a>
+        <p>
+          STUART WEITZMAN GILLIAN 60 LEATHER BOOT $795 $479.99
+          <span>Save 66%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./tranding now/2.png" alt="" /></a>
+        <p>
+          ROXY WOMENS DOWN WINTER PUFFER COAT $499 $248.98 <span>Save 50%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./tranding now/3.png" alt="" /></a>
+        <p>
+          BALENCIAGA HANDBAGS CITY WOMEN LEATHER RED $1771 $1,158.34
+          <span>Save 35%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./tranding now/4.png" alt="" /></a>
+        <p>
+          STUART WEITZMAN GENNA LEATHER OVER-THE-KNEE BOOT $895 $409.99
+          <span>Save 67%</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><img src="./tranding now/5.png" alt="" /></a>
+        <p>
+          BOTTEGA VENETA FLASH LEATHER BOOTIE $1350 $1,189.99
+          <span>Save 26%</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div id="box" onload="show()">
+      <div class="parent">
+        <div id="leftarrow" onclick="moveLeft()">
+          <button>&lt;</button>
+        </div>
+        <div class="child" id="c1">
+          <img src="./slid3/1.png" alt="" />
+        </div>
+        <div class="child" id="c2">
+          <img src="./slid3/2.png" alt="" />
+        </div>
+        <div class="child" id="c3">
+          <img src="./slid3/3.png" alt="" />
+        </div>
+        <div class="child" id="c4">
+          <img src="./slid3/4.png" alt="" />
+        </div>
+        <div class="child" id="c5">
+          <img src="./slid3/5.png" alt="" />
+        </div>
+        <div class="child" id="c6">
+          <img src="./slid3/6.png" alt="" />
+        </div>
+        <div class="child" id="c7">
+          <img src="./slid3/7.png" alt="" />
+        </div>
+        <div class="child" id="c8">
+          <img src="./slid3/8.png" alt="" />
+        </div>
+        <div class="child" id="c9">
+          <img src="./slid3/9.png" alt="" />
+        </div>
+        <div class="child" id="c10">
+          <img src="./slid3/10.png" alt="" />
+        </div>
+        <div class="child" id="c11">
+          <img src="./slid3/11.png" alt="" />
+        </div>
+        <div id="rightarrow" onclick="moveRight()">
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
     <div id="page_footer"></div>
   </body>
 </html>
+<script src="index.js"></script>
 
 <script type="module">
   import { headerHtml, headerJS } from "./components/header.js";
