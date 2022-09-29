@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="./images/bluflylogo.jpeg" />
     <script
-    src="https://kit.fontawesome.com/18dcf284b5.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/18dcf284b5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="navbar.css" />
   </head>
   <link rel="stylesheet" href="signup.css" />
@@ -21,18 +21,23 @@
     <div id="main">
       <div id="sign">
         <label id="labal1">FIRST NAME</label>
-        <input id="name" type="text" name="Email" value=""  />
+        <input id="name" type="text" name="Email" value="" />
         <label id="label1">LAST NAME</label>
-        <input id="name" type="name"   />
+        <input id="name" type="name" />
         <label id="lebal1">EMAIL</label>
-        <input type="email" id="email"  />
+        <input type="email" id="email" />
         <label id="lebal1">PASSWORD</label>
         <input type="password" id="pass" value="" />
-        
-          <div id="checkbox">
-          <input type="checkbox" name="" id="check" /><label for="checkbox" class="label2"> Subscribe to stay updated with new offers!</label>
-          </div>
-       
+
+        <div id="checkbox">
+          <input type="checkbox" name="" id="check" /><label
+            for="checkbox"
+            class="label2"
+          >
+            Subscribe to stay updated with new offers!</label
+          >
+        </div>
+
         <button onclick="Register()">CREATE</button>
       </div>
     </div>
@@ -41,9 +46,9 @@
 </html>
 <script src="signup.js"></script>
 <script type="module">
-  import { headerHtml , headerJS } from "./components/header.js";
+  import { headerHtml, headerJS } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
-  headerJS()
+  headerJS();
 </script>
 
 <script type="module">
