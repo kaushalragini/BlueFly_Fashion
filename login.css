@@ -20,6 +20,7 @@
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   color: #000;
+  margin-top: 200px;
 }
 #main {
   width: 35%;
@@ -37,7 +38,7 @@
   height: auto;
   display: grid;
   margin: auto;
-  position: relative;
+  /* position: relative; */
 }
 #login > input {
   height: 43px;
