@@ -100,10 +100,3 @@ function bottomSliderImg(){
 bottomSliderImg();
 
 
-function show(){
-
-    for( i=1;i<=4;i++){
-        document.getElementById("c"+i).style.display="inline-block";
-    }
-   
-}
