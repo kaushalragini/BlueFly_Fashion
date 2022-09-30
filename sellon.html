@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="export.css" />
     <link rel="stylesheet" href="sellon.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="cartslider.css" />
   </head>
   <body>
     <div id="nav_header"></div>
+    <div id="slider"></div>
+    <div id="mySidebar" class="sidebar"></div>
     <div id="sell">
       <h1>PARTNER WITH BLUEFLY</h1>
       <p>Founded in 1998, Bluefly is the original fashion retailer.</p>
@@ -36,9 +40,20 @@
 </html>
 
 <script type="module">
-  import { headerHtml, headerJS } from "./components/header.js";
+  import {
+    headerHtml,
+    headerJS,
+    topSliderTxt,
+    bagSideClose,
+    bagSideOpen,
+    cartsliderhtml,
+  } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
   headerJS();
+  topSliderTxt();
+  bagSideOpen();
+  bagSideClose();
 </script>
 
 <script type="module" src="sellon.js"></script>

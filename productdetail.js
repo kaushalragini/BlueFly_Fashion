@@ -1,2 +1,0 @@
-let dataToShow = {"product_name":"Cashmere Blend Black  V-Neck Sweater","product_description":" Black, brand_Cashmere Company, condition_New, is-returnableis_returnable, size-womens-clothing_10, size-womens-clothing_12, size-womens-clothing_6, size-womens-clothing_8","img":["https://cdn.shopify.com/s/files/1/0248/3473/6191/products/77228-77231_a_resized_large.jpg?v=1664171013","https://cdn.shopify.com/s/files/1/0248/3473/6191/products/77228-77231_b_resized_large.jpg?v=1664171015"],"previousprice":"$27.99","new_price":"$195.00"}
-

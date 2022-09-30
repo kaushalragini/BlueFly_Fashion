@@ -1,291 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="walletdetails.css">
-</head>
-<body>
+    <link rel="stylesheet" href="walletdetails.css" />
+    <link rel="icon" type="image/x-icon" href="./images/bluflylogo.jpeg" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="cartslider.css" />
+    <script
+      src="https://kit.fontawesome.com/18dcf284b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="nav_header"></div>
+    <div id="slider"></div>
+    <div id="mySidebar" class="sidebar"></div>
+
     <div id="total-div">
-        <div>
-         <a href="index.html"><img id="logooo" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?204757" alt=""></a>
+      <div>
+        <a href="index.html"
+          ><img
+            id="logooo"
+            src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?204757"
+            alt=""
+        /></a>
 
-<div id="arrows">
-    <a href=""> <p>Cart <i class="arrow right"></i></p></a>
-    <p>Information <i class="arrow right"></i></p>
-    <p>Shipping <i class="arrow right"></i></p>
-    <p>Payment <i class="arrow right"></i></p>
-</div>
-<table style="width:100%"><tr >
-    <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
-    <td style="vertical-align:middle;text-align:center " rowspan="2">Express checkout</td>
-    <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
-    </tr><tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    </tr></table>
-    <div id="payment-logos">
-<img src="https://cdn.shopify.com/shopifycloud/help/assets/manual/shop-pay-installments/shop-pay-logo-color-e824c8c627de20423f3abba730d2d5df83c5b848847f029f91ec1bd011f6b0e3.png" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQVjU8IwGHm0L8t2_wp_fH-Fj-t9OGmo0VrDEsi-Kk_isNyChYZAkH6xxknWdTAqkpnw&usqp=CAU" alt="">
-<img src="https://www.xda-developers.com/files/2020/11/Google-Pay-logo-1900x700_c.jpg" alt="">
-    </div>
-<table style="width:100%"><tr >
-    <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
-    <td style="vertical-align:middle;text-align:center " rowspan="2">OR</td>
-    <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
-    </tr><tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    </tr></table>
-    <div id="contact-or-login">
-        <h4>Contact information</h4>
-        <p>Already have an account? <a href="login.html"> Log in</a></p>
-    </div>
-<input type="email" placeholder="Email" id="input-email">
-<form action="/action_page.php">
-  <input type="checkbox" id="checkbox-box">
-  <label for="email">  Email me with news and offers</label><br>
-</form>
-<p>Shipping Address</p>
-<select name="" id="select-tag">
-    <option value="">Country/region</option>
-    <option value="">United States</option>
-</select>
-<div id="nameandtitle">
-    <input id="firstname" type="text" placeholder="First name">
-    <input id="lastname" type="text" placeholder="Last name">
-</div>
-<input type="address" id="input-email" placeholder="Address">
-<input type="text" id="input-email" class="Apartment" placeholder="Apartment, suite, etc. (optional)">
-
-<div id="city-zip">
-    <input id="city" type="text" placeholder="City">
-    <select name="" id="">
-        <option id="state" value="State">State</option>
-       <option value="">Andhra Pradesh</option>
-       <option value="">Anurachal Pradesh</option>
-       <option value="">Asam</option>
-       <option value="">Bihar</option>
-       <option value="">Chhattisgarh</option>
-       <option value="">Gujarat</option>
-       <option value="">Goa</option>
-       <option value="">Haryana</option>
-       <option value="">Himachal Pradesh</option>
-       <option value="">Jharkhand</option>
-       <option value="">Karnataka</option>
-       <option value="">Kerala</option>
-       <option value="">Madhya Pradesh</option>
-       <option value="">Maharashtra</option>
-       <option value="">Manipur</option>
-       <option value="">Megalaya</option>
-       <option value="">Mizoram</option>
-       <option value="">Nagaland</option>
-       <option value="">Odisha</option>
-       <option value="">Punjab</option>
-       <option value="">Rajasthan</option>
-       <option value="">Sikkim</option>
-       <option value="">Tamil Nadu</option>
-       <option value="">Telengana</option>
-       <option value="">Tripura</option>
-       <option value="">Uttar Pradesh</option>
-       <option value="">Uttarakhand</option>
-       <option value="">West Bengal</option>
-    </select>
-    <input id="zipcode" type="text" placeholder="ZIP code">
-</div>
-<input type="number" placeholder="Phone" id="input-email">
-<form action="/action_page.php">
-    <input type="checkbox" id="checkbox-box">
-    <label for="email">  SIGN UP FOR OUR SMS MESSAGES TO RECEIVE SPECIAL OFFERS, DISCOUNTS AND MORE!</label><br>
-  </form>
-  <div id="shipping-button">
-    <a href=""> <p><i class="arrow left"></i> Return to cart</p></a>
-    <button id="continueBtn">Continue to shipping</button>
-  </div>
-<div id="pop-up-pages">
-<p><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Refund policy</a></p>
-        <div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img id="cros" src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png" alt=""></a>
-        <h1>Refund policy</h1> 
-        <h3>GENERAL POLICY</h3>
-        <p>Returns must be in their original, unused, and undamaged condition with all tags attached and all packaging included. Return time frames are either 14 days or final sale; this is indicated in each item's description located on the product page. Pieces sent back after the return period or without original packaging and the security tag attached, will not be refunded. Our system prevents prepaid shipping labels and return authorization forms from being created past the returns window. Be advised that all returns have a 7 day shipping window from the day the RMA is assigned. Shipping charges are not refundable. *Important Note: Late returns will not be accepted past their indicated returns period and no refund will be issued.</p>
-        <h3>NO EXCHANGES</h3>
-        <p>Bluefly thrives off of providing our customers with the deepest discounts on all types of luxury goods and because of this, our inventory is constantly changing. Therefore, we are unable to process exchanges due to our constant flow of new inventory. If you are dissatisfied with an item, please create an RMA with our user friendly return form. If you would like help with finding a similar item, our Customer Service team can assist you at flyrep@bluefly.com</p>
-        <h3>WRONG, DAMAGED OR DEFECTIVE ITEMS</h3>
-        <p>Please contact Customer Service at flyrep@bluefly.com with a photo of the damaged goods or the wrong item you received along with the order number.</p>
-        <h3>FINAL SALE</h3>
-        <p>Items that are marked as ‘final sale’ cannot be returned unless you are sent wrong, damaged or defective items. No exceptions. </p>
-        <h3>INTERNATIONAL RETURNS</h3>
-        <p>We are currently not supporting international shipping and are unable to facilitate returns. If you have received an item that is damaged or incorrect, we are unable to provide a Return Authorization and shipping label or reimburse the cost to ship the goods back to us.</p>
-        <p>For additional information about Returns, <a href="shipping.html">click here.</a> </p>
-        <h3>PROMOTIONS</h3>
-        <p>If you wish to return an item to which you applied a promotional code, follow the standard return procedure. Coupon codes & offers are only valid during the stated promotion times and cannot be applied retroactively to purchases made prior to the start of a sale or to purchases made after the end of a sale.</p>
-        <h3>GIFT CARDS</h3>
-        <p>Gift cards are final sale and cannot be refunded or exchanged.</p>
-    
-    </div>
-        <div id="fade" class="black_overlay"></div>
-
-
-        <p><a href = "javascript:void(0)" onclick = "document.getElementById('second').style.display='block';document.getElementById('fade').style.display='block'">Shipping policy</a></p>
-        <div id="second" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('second').style.display='none';document.getElementById('fade').style.display='none'"><img id="cros" src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png" alt=""></a>
-        <h1>Shipping policy</h1>
-        <p>Most items are available to ship in 1-2 business days unless otherwise noted by Availability in the item details.</p>
-        <p>Standard delivery takes 4-8 business days and will be shipped with UPS, UPS SurePost, FedEx, SmartPost, or US Postal Service. APO/FPO, AK and HI all ship standard shipping. Please note that additional fees may apply.</p>
-        <p>Expedited shipping takes 2-3 business days, extra fees will be charged per item at checkout and varies based on vendor.</p>
-        <p>Bluefly ships to the contiguous 48 states, the District of Columbia, Alaska*, Hawaii* and APO/FPO addresses (For most items). Some Marketplace items have shipping restrictions to Shipping options offered during checkout and may vary based upon the shipping address provided. We do offer international shipping at this time.</p>
-        <p>For additional information about Shipping, <a href="shipping.html">click here.</a> </p>
-    
-
-</div>
-        <div id="fade" ></div>
-        <p><a href = "javascript:void(0)" onclick = "document.getElementById('third').style.display='block';document.getElementById('fade').style.display='block'">Privacy policy</a></p>
-        <div id="third" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('third').style.display='none';document.getElementById('fade').style.display='none'"><img id="cros" src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png" alt=""></a>
-        <h1>Privacy policy</h1>
-        <p>Last updated:</p>
-        <p>Aug. 31, 2022</p>
-        <p>Our commitment to privacy</p>
-        <p>Bluefly.com LLC, a Florida corporation ("Bluefly") has created this privacy policy (this “Policy”) to demonstrate our firm commitment to the privacy of our visitors and customers. Bluefly is committed to respecting your privacy and recognizing your need for appropriate protection and management of the information you share with us. The purpose of this privacy policy is to describe the personal information we may collect from you, the purposes for which we collect it, how we use it and when we may share it with third parties. This Policy also describes the choices you can make about how we collect, use and disclose your information. Bluefly will not collect, use or disclose your personal information other than in compliance with this Policy.</p>
-        <p>By using the www.bluefly.com website and/or making online purchases of products, you agree to the terms and conditions of Bluefly’s Policy. If our Policy changes substantively in the future, we will notify our customers and website users of any such changes by posting an updated Policy on our website.</p>
-        <p>Following the posting of such changes, your continued use of the Bluefly website will constitute your acceptance of these changes and you will be bound by such changes. If you do not continue to use the www.bluefly.com website following a change to our Policy but take no other action with respect to your personal information, our use of that information will remain subject to our Policy as it was in effect prior to the change. You are responsible for regularly reviewing this Policy and any changes thereto.</p>
-        <p>We may offer you the ability to connect with our website, or use our applications, services, and tools using a mobile device, either through a mobile application or via a mobile optimized website. The provisions of this Policy apply to all such mobile access and use of mobile devices. This Policy will be referenced by all such mobile applications or mobile optimized websites.</p>
-        <p>Our privacy policy</p>
-        <p>What kind of information do we collect?</p>
-        <p>We may collect personal information from you when you save or otherwise provide your personal information to us, such as by setting up a user account and password, logging in as a registered user of, searching for a product, making an order for a product, providing information in your account (and you might have more than one, if you've used more than one e-mail address when shopping with us), interacting with us by phone, e-mail, or through our websites, mobile optimized websites, mobile applications or otherwise or if you complete an entry form to participate in a contest, promotion or survey, whether online or at one of our retail stores. As a result of these actions, you might supply us with personal information, such as your name, e-mail and postal addresses, phone number(s), credit card information, names of people to whom purchases have been shipped, including address and telephone numbers, product interest information and financial information and in certain circumstances, your opinions and individual preferences. We may also maintain a record of your product interests and acquire information about you from our present and future affiliates or divisions. When you visit our website, we may also gather certain information automatically and store it in log files. This information may include without limitation browser information, Internet Service Provider (ISP), operating system, Internet Protocol (IP) addresses or other device identifiers, location and date/time stamp.
-
-            Bluefly's servers automatically record certain information that your web browser sends whenever you visit the Website. These server logs may include information such as your web request, Internet Protocol ("IP") address, browser type, browser language, referring / exit pages and URLs, platform type, number of clicks, domain names, landing pages, pages viewed and the order of those pages, the amount of time spent on particular pages, the date and time of your request, and one or more cookies that may uniquely identify your browser.
-            
-            Bluefly and/or third parties that we contract with may employ "clear GIFs" (a.k.a. Web Beacons), tracking pixels or similar devices, which are used to track the online usage patterns anonymously (i.e., in a non-personally-identifiable manner). In addition, Bluefly may also use these devices in HTML-based emails sent to users to track which emails are opened by recipients.
-            
-            Various features on the Website may allow you to share your information with others by publicly posting that information on the Website and/or sharing that information by other communication methods including (without limitation) email, Facebook or Twitter. To the extent that you choose to share any such information it is no longer considered personal information and is not covered by this privacy policy.
-            
-            Bluefly’s website is directed for use by adults. Bluefly does not knowingly collect any personal information from children under the age of 13. Those under age 13 should not use Bluefly’s  website or provide Bluefly with any personal information.
-            
-            For what purpose do we collect your information?
-            
-            We may use your personal information to (i) process your order and to answer questions about the status of your order; (ii) send you or your friends, relatives or associates, products that you have ordered; (iii) maintain contact with you and provide you with ongoing personalized service; (iv) communicate with you (via e-mail, post or otherwise) and provide you with promotional materials and additional information regarding our products, services, surveys, contests, promotions and special offers; (v) help us learn more about your shopping preferences; and (vi) conduct marketing and performance research, to assist us in measuring our customer service, benchmarking our performance and to help us improve our shopping experiences and product offerings. As provided below, you may always choose not to receive promotional materials or marketing information.
-            
-            Do we share your information with third parties?
-            
-            We do not sell or rent your personal information to non-affiliated third parties except as permitted by law. However, in the event of a sale of all or substantially all of our business or another similar transaction, we may transfer or disclose your personal information to a purchaser or prospective purchaser, who may collect, use and disclose such information for the purposes of evaluating the proposed transaction or operating and managing the affairs of the acquired business, or for other purposes identified in this Policy.
-            
-            We may transfer personal information to third parties for processing only if it is subject to agreements that prohibit the third parties from using or disclosing the personal information other than for the purpose of processing and which impose security safeguards appropriate to the sensitivity of the information.
-            
-            We may also use third-party advertising agencies to collect data and/or serve ads when you visit our websites. These agencies may use information (not including your name, address, email address or telephone number) about your visits to this website in order to provide tailored advertisements about goods and services of interest to you.
-            
-            We reserve the right to disclose your personal information as required by law, in response to legal process and law enforcement requests.
-            
-            Our website may contain links to websites operated by third parties. These websites may collect your personal information. This Policy does not apply to the practices of third parties and we do not assume any responsibility for, and by using this website and/or accessing a third party's website from this website you release Bluefly, and its members, employees, agents, officers and directors, of any responsibility for, the actions, practices and omissions of third parties. Please check the privacy policy at each site you visit.
-            
-            In the event that Bluefly is acquired by or merged with a third party entity, it reserves the right to transfer or assign the information it has collected from users as part of such merger, acquisition, sale, or other change of control. In the unlikely event of Bluefly's bankruptcy, insolvency, reorganization, receivership, or assignment for the benefit of creditors, or the application of laws or equitable principles affecting creditors' rights generally, Bluefly may not be able to control how your personal information is treated, transferred, or used.
-            
-            How can you exercise my choices about receiving promotions?
-            
-            If we ask for your personal information for a secondary reason, like promotions, we will either ask you directly for your expressed consent or provide you with an opportunity to opt out.
-            
-            If you prefer not to receive promotional information from us or if you do not want us to use your information to enhance your shopping experience, please let us know by using one of the following methods: (i) email us at privacy@bluefly.com, or (ii) send your request to 1111 Brickell Ave, Suite 2200, Miami, FL 33131. Please be sure to include your full name and the e-mail address you used when you registered with or made a purchase from us. It may take up to 30 days to process your postal mail request, during which period you may continue to receive communications from us. You may also unsubscribe from our email services by using the unsubscribe link situated at the bottom of any promotional message you receive from us.
-            
-            What are cookies and how do we use cookies on its site?
-            
-            The site uses cookie technology to improve the quality of your experience. A cookie is a small text file that is downloaded onto ‘terminal equipment’ (for example, a computer or smartphone) when the user accesses a website. It allows the website to recognize that user’s device and store some information about the user’s preferences or past actions. They keep a record of your preferences making your subsequent visits to the site more efficient. Cookies may store a variety of information, including, the number of times that you access a site, registration information and the number of times that you view a particular page or other item on the site. The use of cookies is a common practice adopted by most major sites to better serve their clients. We use cookies to ensure that we give you the best possible experience on our website.
-            
-            If you do not want to accept cookies, you can block them by adjusting the settings on your internet browser. Please note that this adjustment may also block cookies for any website you visit. You can visit www.aboutcookies.org, which provides detailed information on managing cookies in popular browsers.
-            
-            Blocking cookies  may affect your ability to benefit from the convenience afforded by the use of cookies, may affect your ability to use certain customization features associated with creating a user profile, and if the cookies are necessary for the website to operate properly, may affect your experience of the website.
-            
-            How can you access or change your personal information, withdraw your consent, or make inquiries or complaints in relation to this Policy and our privacy practices?
-            
-            We make our best efforts to ensure that the personal information we collect is as accurate, complete, and up-to-date as is necessary for the purposes for which it is to be used. You are entitled to request access to and correction of your personal information collected by us. In order to make such a request, or if you have any questions or to make any complaint in relation to this Policy and our privacy practices, please email our Privacy Compliance Officer at privacy@bluefly.com and by writing to:</p>
-        <p>1111 Brickell Ave
-
-                Suite 2200
-                
-                Miami, FL 33131</p>
-        <p>If you have consented to the collection, use and/or disclosure of personal information as identified herein, please note that you can also withdraw your consent at any time by communicating with us as provided above.
-
-                    Please note that it may take up to 30 days to process your requests.
-                    
-                    How long is personal information retained?
-                    
-                    We will keep your personal information only so long as it is reasonably necessary for the purposes described in this Policy or such longer period as may be required by applicable law.
-                    
-                    How is personal information secured?
-                    
-                    We have adopted appropriate measures to ensure the confidentiality of personal information and to safeguard personal information against loss or theft, as well as unauthorized access, disclosure, copying, use or modification, in light of, among other things, the sensitivity of the information and the purposes for which it is to be used.</p>
-        <p>To protect your personal information, we take reasonable precautions and follow industry best practices to make sure it is not inappropriately lost, misused, accessed, disclosed, altered or destroyed.
-
-                        If you provide us with your credit card information, the information is encrypted using secure socket layer technology (SSL) and stored with proper encryption. Although no method of transmission over the Internet or electronic storage is 100% secure, we adhere to generally accepted industry standards.</p>
-       <h1>Mobile Terms of Service</h1>
-       <h3>BLUEFLY</h3>
-        <p>Last updated: Aug. 31, 2022</p>
-        <p>The BLUEFLY mobile message service (the "Service") is operated by BLUEFLY (“BLUEFLY”, “we”, or “us”). Your use of the Service constitutes your agreement to these terms and conditions (“Mobile Terms”). We may modify or cancel the Service or any of its features without notice. To the extent permitted by applicable law, we may also modify these Mobile Terms at any time and your continued use of the Service following the effective date of any such changes shall constitute your acceptance of such changes.
-
-            By consenting to BLUEFLY’s SMS/text messaging service, you agree to receive recurring SMS/text messages from and on behalf of BLUEFLY through your wireless provider to the mobile number you provided, even if your mobile number is registered on any state or federal Do Not Call list. Text messages may be sent using an automatic telephone dialing system or other technology. Service-related messages may include updates, alerts, and information (e.g., order updates, account alerts, etc.). Promotional messages may include promotions, specials, and other marketing offers (e.g., cart reminders).
-            
-            You understand that you do not have to sign up for this program in order to make any purchases, and your consent is not a condition of any purchase with BLUEFLY. Your participation in this program is completely voluntary.</p>
-       <p>We do not charge for the Service, but you are responsible for all charges and fees associated with text messaging imposed by your wireless provider. Message frequency varies. Message and data rates may apply. Check your mobile plan and contact your wireless provider for details. You are solely responsible for all charges related to SMS/text messages, including charges from your wireless provider.</p>
-       <p>You may opt-out of the Service at any time. Text the single keyword command STOP to +18337070811 or click the unsubscribe link (where available) in any text message to cancel. You'll receive a one-time opt-out confirmation text message. No further messages will be sent to your mobile device, unless initiated by you. If you have subscribed to other BLUEFLY mobile message programs and wish to cancel, except where applicable law requires otherwise, you will need to opt out separately from those programs by following the instructions provided in their respective mobile terms.
-
-        For Service support or assistance, text HELP to +18337070811 or email privacy@bluefly.com.
-        
-        We may change any short code or telephone number we use to operate the Service at any time and will notify you of these changes. You acknowledge that any messages, including any STOP or HELP requests, you send to a short code or telephone number we have changed may not be received and we will not be responsible for honoring requests made in such messages.
-        
-        The wireless carriers supported by the Service are not liable for delayed or undelivered messages. You agree to provide us with a valid mobile number. If you get a new mobile number, you will need to sign up for the program with your new number.
-        
-        To the extent permitted by applicable law, you agree that we will not be liable for failed, delayed, or misdirected delivery of any information sent through the Service, any errors in such information, and/or any action you may or may not take in reliance on the information or Service.
-        
-        We respect your right to privacy. To see how we collect and use your personal information, please see our Privacy Notice.
-        
-        Changes to This Privacy Policy
-        
-        We reserve the right to modify this privacy policy at any time, so please review it frequently. Changes and clarifications will take effect immediately upon their posting on the website. If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it.</p>
-    <h3>Questions and Contact Information</h3>
-   <p>If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at privacy@bluefly.com or by mail at:</p>
-   <p>1111 Brickell Ave</p>
-   <p>Suite 2200</p>
-   <p>Miami, FL 33131</p>
-    
-    
-    </div>
-        <div id="fade" ></div>
-        <p><a href = "javascript:void(0)" onclick = "document.getElementById('four').style.display='block';document.getElementById('fade').style.display='block'">Terms of service</a></p>
-        <div id="four" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('four').style.display='none';document.getElementById('fade').style.display='none'"><img id="cros" src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png" alt=""></a>
-        <h1>Terms of service</h1>
-        <p>This website Bluefly.com is owned, operated and distributed by Bluefly D.B.A. Bluefly.com LLC., a Florida corporation ("Bluefly"). BY ACCESSING ANY PART OF THE WEBSITE, YOU ARE AGREEING TO THE TERMS AND CONDITIONS DESCRIBED BELOW (THE "CONDITIONS OF USE") AND THE TERMS AND CONDITIONS OF THE BLUEFLY PRIVACY POLICY (THE "POLICY"). IF YOU DO NOT AGREE TO ANY OF THESE TERMS, YOU SHOULD NOT USE THE WEBSITE. These Conditions of Use apply to all users, including both users who are simply viewing the Website and users who are purchasing goods through the Website.</p>
-        <p>You acknowledge that Bluefly may terminate your account, remove any data or content that you have provided and/or disable your access to the Website, in whole or part, at any time for any reason or no reason, with or without notice and with no liability of any kind. In addition, Bluefly may modify or remove any service or functionality included in the Website at any time, with or without notice and with no liability of any kind.</p>
-        <p>These Conditions of Use, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by Bluefly without restriction.
-
-            Use of the Web Site is only available only to individuals who are at least 13 years old. If you are not 13 years old, you are not authorized to use the Website.
-            
-            Bluefly may, at its sole discretion, modify these Conditions of Use at any time. By accessing the Website at any time after such modifications, you are agreeing to such modifications. These Conditions of Use were last modified as of October 1, 2019.
-            
-            Important Disclaimer 
-            
-            Bluefly offers only the best brand names and highest quality goods, and proudly stands behind the authenticity of its goods. In some instances, these goods may not be obtained directly from the designers but rather may have been purchased from reputable resellers at a discount. In this regard, Bluefly expressly disclaims any indication that it is an authorized dealer or agent of any of the designers whose goods are offered on this site.</p>
-    <p>Bluefly reserves the right to refuse any order placed on the Website, and may, in its sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event Bluefly makes a change to or cancels an order, it will attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. Bluefly reserves the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors, or to refuse to service a customer for any reason. 
-
-    All goods purchased from Bluefly.com are F.O.B. at our fulfillment center. Title to goods passes to you at the time of delivery by the fulfillment center to a common carrier.
-                
-    Sales tax is applied to your Bluefly.com order in accordance with individual state and local regulations if your shipping address is in one of the following states: Florida and California. Appropriate tax charges will appear on the "Review Order" page during checkout.</p>
-    <h3>Security</h3>
-    <p>Because Bluefly uses some of the most sophisticated commercially available security software, it is extremely unlikely that any personal information that you transmit to us will be misappropriated. In the rare instance that an unauthorized person obtains your credit card information and uses it, by federal law, you are only liable for the first $50. In any instance where you have discovered or suspect fraud, you need to contact your credit card companies immediately. </p>
-    <h3>
-         Product information
-    </h3>
-    <p>Occasionally there may be information on the Website that contains typographical errors, inaccuracies, or omissions that may relate to product descriptions, pricing, promotions, offers, and availability. Bluefly reserves the right to correct any errors, inaccuracies or omissions and to change or update information or cancel orders if any information on the Website is inaccurate at any time without prior notice (including after you have submitted your order). Bluefly has made every effort to display as accurately as possible the colors of the products that appear on the Website. However, Bluefly cannot guarantee that your computer monitor's display of any color will be accurate.
-
-    Links to Other Web Sites and Services
-                    
-    The Website may contain links to other Websites that are not under the control of Bluefly. Bluefly has no responsibility for the linked Web sites nor does linking constitute an endorsement of any linked Web site. Links are provided solely for the convenience and information of the Websites' users.</p>
-
-    </div>
-        <div id="fade" ></div>
-    </div>
+        <div id="arrows">
+          <a href="">
+            <p>Cart <i class="arrow right"></i></p
+          ></a>
+          <p>Information <i class="arrow right"></i></p>
+          <p>Shipping <i class="arrow right"></i></p>
+          <p>Payment <i class="arrow right"></i></p>
         </div>
-        <div id="cart-details-div">
+        <table style="width: 100%">
+          <tr>
+            <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
+            <td style="vertical-align: middle; text-align: center" rowspan="2">
+              Express checkout
+            </td>
+            <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <div id="payment-logos">
+          <img
+            src="https://cdn.shopify.com/shopifycloud/help/assets/manual/shop-pay-installments/shop-pay-logo-color-e824c8c627de20423f3abba730d2d5df83c5b848847f029f91ec1bd011f6b0e3.png"
+            alt=""
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQVjU8IwGHm0L8t2_wp_fH-Fj-t9OGmo0VrDEsi-Kk_isNyChYZAkH6xxknWdTAqkpnw&usqp=CAU"
+            alt=""
+          />
+          <img
+            src="https://www.xda-developers.com/files/2020/11/Google-Pay-logo-1900x700_c.jpg"
+            alt=""
+          />
         </div>
+        <table style="width: 100%">
+          <tr>
+            <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
+            <td style="vertical-align: middle; text-align: center" rowspan="2">
+              OR
+            </td>
+            <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <div id="contact-or-login">
+          <h4>Contact information</h4>
+          <p>Already have an account? <a href="login.html"> Log in</a></p>
+        </div>
+        <input type="email" placeholder="Email" id="input-email" />
+        <form action="/action_page.php">
+          <input type="checkbox" id="checkbox-box" />
+          <label for="email"> Email me with news and offers</label><br />
+        </form>
+        <p>Shipping Address</p>
+        <select name="" id="select-tag">
+          <option value="">Country/region</option>
+          <option value="">United States</option>
+        </select>
+        <div id="nameandtitle">
+          <input id="firstname" type="text" placeholder="First name" />
+          <input id="lastname" type="text" placeholder="Last name" />
+        </div>
+        <input type="address" id="input-email" placeholder="Address" />
+        <input
+          type="text"
+          id="input-email"
+          class="Apartment"
+          placeholder="Apartment, suite, etc. (optional)"
+        />
+
+        <div id="city-zip">
+          <input id="city" type="text" placeholder="City" />
+          <select name="" id="">
+            <option id="state" value="State">State</option>
+            <option value="">Andhra Pradesh</option>
+            <option value="">Anurachal Pradesh</option>
+            <option value="">Asam</option>
+            <option value="">Bihar</option>
+            <option value="">Chhattisgarh</option>
+            <option value="">Gujarat</option>
+            <option value="">Goa</option>
+            <option value="">Haryana</option>
+            <option value="">Himachal Pradesh</option>
+            <option value="">Jharkhand</option>
+            <option value="">Karnataka</option>
+            <option value="">Kerala</option>
+            <option value="">Madhya Pradesh</option>
+            <option value="">Maharashtra</option>
+            <option value="">Manipur</option>
+            <option value="">Megalaya</option>
+            <option value="">Mizoram</option>
+            <option value="">Nagaland</option>
+            <option value="">Odisha</option>
+            <option value="">Punjab</option>
+            <option value="">Rajasthan</option>
+            <option value="">Sikkim</option>
+            <option value="">Tamil Nadu</option>
+            <option value="">Telengana</option>
+            <option value="">Tripura</option>
+            <option value="">Uttar Pradesh</option>
+            <option value="">Uttarakhand</option>
+            <option value="">West Bengal</option>
+          </select>
+          <input id="zipcode" type="text" placeholder="ZIP code" />
+        </div>
+        <input type="number" placeholder="Phone" id="input-email" />
+        <form action="/action_page.php">
+          <input type="checkbox" id="checkbox-box" />
+          <label for="email">
+            SIGN UP FOR OUR SMS MESSAGES TO RECEIVE SPECIAL OFFERS, DISCOUNTS
+            AND MORE!</label
+          ><br />
+        </form>
+        <div id="shipping-button">
+          <a href="">
+            <p><i class="arrow left"></i> Return to cart</p></a
+          >
+          <button id="continueBtn">Continue to shipping</button>
+        </div>
+        <div id="pop-up-pages">
+          <p>
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"
+              >Refund policy</a
+            >
+          </p>
+          <div id="light" class="white_content">
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+              ><img
+                id="cros"
+                src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png"
+                alt=""
+            /></a>
+            <h1>Refund policy</h1>
+            <h3>GENERAL POLICY</h3>
+            <p>
+              Returns must be in their original, unused, and undamaged condition
+              with all tags attached and all packaging included. Return time
+              frames are either 14 days or final sale; this is indicated in each
+              item's description located on the product page. Pieces sent back
+              after the return period or without original packaging and the
+              security tag attached, will not be refunded. Our system prevents
+              prepaid shipping labels and return authorization forms from being
+              created past the returns window. Be advised that all returns have
+              a 7 day shipping window from the day the RMA is assigned. Shipping
+              charges are not refundable. *Important Note: Late returns will not
+              be accepted past their indicated returns period and no refund will
+              be issued.
+            </p>
+            <h3>NO EXCHANGES</h3>
+            <p>
+              Bluefly thrives off of providing our customers with the deepest
+              discounts on all types of luxury goods and because of this, our
+              inventory is constantly changing. Therefore, we are unable to
+              process exchanges due to our constant flow of new inventory. If
+              you are dissatisfied with an item, please create an RMA with our
+              user friendly return form. If you would like help with finding a
+              similar item, our Customer Service team can assist you at
+              flyrep@bluefly.com
+            </p>
+            <h3>WRONG, DAMAGED OR DEFECTIVE ITEMS</h3>
+            <p>
+              Please contact Customer Service at flyrep@bluefly.com with a photo
+              of the damaged goods or the wrong item you received along with the
+              order number.
+            </p>
+            <h3>FINAL SALE</h3>
+            <p>
+              Items that are marked as ‘final sale’ cannot be returned unless
+              you are sent wrong, damaged or defective items. No exceptions.
+            </p>
+            <h3>INTERNATIONAL RETURNS</h3>
+            <p>
+              We are currently not supporting international shipping and are
+              unable to facilitate returns. If you have received an item that is
+              damaged or incorrect, we are unable to provide a Return
+              Authorization and shipping label or reimburse the cost to ship the
+              goods back to us.
+            </p>
+            <p>
+              For additional information about Returns,
+              <a href="shipping.html">click here.</a>
+            </p>
+            <h3>PROMOTIONS</h3>
+            <p>
+              If you wish to return an item to which you applied a promotional
+              code, follow the standard return procedure. Coupon codes & offers
+              are only valid during the stated promotion times and cannot be
+              applied retroactively to purchases made prior to the start of a
+              sale or to purchases made after the end of a sale.
+            </p>
+            <h3>GIFT CARDS</h3>
+            <p>
+              Gift cards are final sale and cannot be refunded or exchanged.
+            </p>
+          </div>
+          <div id="fade" class="black_overlay"></div>
+
+          <p>
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('second').style.display='block';document.getElementById('fade').style.display='block'"
+              >Shipping policy</a
+            >
+          </p>
+          <div id="second" class="white_content">
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('second').style.display='none';document.getElementById('fade').style.display='none'"
+              ><img
+                id="cros"
+                src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png"
+                alt=""
+            /></a>
+            <h1>Shipping policy</h1>
+            <p>
+              Most items are available to ship in 1-2 business days unless
+              otherwise noted by Availability in the item details.
+            </p>
+            <p>
+              Standard delivery takes 4-8 business days and will be shipped with
+              UPS, UPS SurePost, FedEx, SmartPost, or US Postal Service.
+              APO/FPO, AK and HI all ship standard shipping. Please note that
+              additional fees may apply.
+            </p>
+            <p>
+              Expedited shipping takes 2-3 business days, extra fees will be
+              charged per item at checkout and varies based on vendor.
+            </p>
+            <p>
+              Bluefly ships to the contiguous 48 states, the District of
+              Columbia, Alaska*, Hawaii* and APO/FPO addresses (For most items).
+              Some Marketplace items have shipping restrictions to Shipping
+              options offered during checkout and may vary based upon the
+              shipping address provided. We do offer international shipping at
+              this time.
+            </p>
+            <p>
+              For additional information about Shipping,
+              <a href="shipping.html">click here.</a>
+            </p>
+          </div>
+          <div id="fade"></div>
+          <p>
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('third').style.display='block';document.getElementById('fade').style.display='block'"
+              >Privacy policy</a
+            >
+          </p>
+          <div id="third" class="white_content">
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('third').style.display='none';document.getElementById('fade').style.display='none'"
+              ><img
+                id="cros"
+                src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png"
+                alt=""
+            /></a>
+            <h1>Privacy policy</h1>
+            <p>Last updated:</p>
+            <p>Aug. 31, 2022</p>
+            <p>Our commitment to privacy</p>
+            <p>
+              Bluefly.com LLC, a Florida corporation ("Bluefly") has created
+              this privacy policy (this “Policy”) to demonstrate our firm
+              commitment to the privacy of our visitors and customers. Bluefly
+              is committed to respecting your privacy and recognizing your need
+              for appropriate protection and management of the information you
+              share with us. The purpose of this privacy policy is to describe
+              the personal information we may collect from you, the purposes for
+              which we collect it, how we use it and when we may share it with
+              third parties. This Policy also describes the choices you can make
+              about how we collect, use and disclose your information. Bluefly
+              will not collect, use or disclose your personal information other
+              than in compliance with this Policy.
+            </p>
+            <p>
+              By using the www.bluefly.com website and/or making online
+              purchases of products, you agree to the terms and conditions of
+              Bluefly’s Policy. If our Policy changes substantively in the
+              future, we will notify our customers and website users of any such
+              changes by posting an updated Policy on our website.
+            </p>
+            <p>
+              Following the posting of such changes, your continued use of the
+              Bluefly website will constitute your acceptance of these changes
+              and you will be bound by such changes. If you do not continue to
+              use the www.bluefly.com website following a change to our Policy
+              but take no other action with respect to your personal
+              information, our use of that information will remain subject to
+              our Policy as it was in effect prior to the change. You are
+              responsible for regularly reviewing this Policy and any changes
+              thereto.
+            </p>
+            <p>
+              We may offer you the ability to connect with our website, or use
+              our applications, services, and tools using a mobile device,
+              either through a mobile application or via a mobile optimized
+              website. The provisions of this Policy apply to all such mobile
+              access and use of mobile devices. This Policy will be referenced
+              by all such mobile applications or mobile optimized websites.
+            </p>
+            <p>Our privacy policy</p>
+            <p>What kind of information do we collect?</p>
+            <p>
+              We may collect personal information from you when you save or
+              otherwise provide your personal information to us, such as by
+              setting up a user account and password, logging in as a registered
+              user of, searching for a product, making an order for a product,
+              providing information in your account (and you might have more
+              than one, if you've used more than one e-mail address when
+              shopping with us), interacting with us by phone, e-mail, or
+              through our websites, mobile optimized websites, mobile
+              applications or otherwise or if you complete an entry form to
+              participate in a contest, promotion or survey, whether online or
+              at one of our retail stores. As a result of these actions, you
+              might supply us with personal information, such as your name,
+              e-mail and postal addresses, phone number(s), credit card
+              information, names of people to whom purchases have been shipped,
+              including address and telephone numbers, product interest
+              information and financial information and in certain
+              circumstances, your opinions and individual preferences. We may
+              also maintain a record of your product interests and acquire
+              information about you from our present and future affiliates or
+              divisions. When you visit our website, we may also gather certain
+              information automatically and store it in log files. This
+              information may include without limitation browser information,
+              Internet Service Provider (ISP), operating system, Internet
+              Protocol (IP) addresses or other device identifiers, location and
+              date/time stamp. Bluefly's servers automatically record certain
+              information that your web browser sends whenever you visit the
+              Website. These server logs may include information such as your
+              web request, Internet Protocol ("IP") address, browser type,
+              browser language, referring / exit pages and URLs, platform type,
+              number of clicks, domain names, landing pages, pages viewed and
+              the order of those pages, the amount of time spent on particular
+              pages, the date and time of your request, and one or more cookies
+              that may uniquely identify your browser. Bluefly and/or third
+              parties that we contract with may employ "clear GIFs" (a.k.a. Web
+              Beacons), tracking pixels or similar devices, which are used to
+              track the online usage patterns anonymously (i.e., in a
+              non-personally-identifiable manner). In addition, Bluefly may also
+              use these devices in HTML-based emails sent to users to track
+              which emails are opened by recipients. Various features on the
+              Website may allow you to share your information with others by
+              publicly posting that information on the Website and/or sharing
+              that information by other communication methods including (without
+              limitation) email, Facebook or Twitter. To the extent that you
+              choose to share any such information it is no longer considered
+              personal information and is not covered by this privacy policy.
+              Bluefly’s website is directed for use by adults. Bluefly does not
+              knowingly collect any personal information from children under the
+              age of 13. Those under age 13 should not use Bluefly’s website or
+              provide Bluefly with any personal information. For what purpose do
+              we collect your information? We may use your personal information
+              to (i) process your order and to answer questions about the status
+              of your order; (ii) send you or your friends, relatives or
+              associates, products that you have ordered; (iii) maintain contact
+              with you and provide you with ongoing personalized service; (iv)
+              communicate with you (via e-mail, post or otherwise) and provide
+              you with promotional materials and additional information
+              regarding our products, services, surveys, contests, promotions
+              and special offers; (v) help us learn more about your shopping
+              preferences; and (vi) conduct marketing and performance research,
+              to assist us in measuring our customer service, benchmarking our
+              performance and to help us improve our shopping experiences and
+              product offerings. As provided below, you may always choose not to
+              receive promotional materials or marketing information. Do we
+              share your information with third parties? We do not sell or rent
+              your personal information to non-affiliated third parties except
+              as permitted by law. However, in the event of a sale of all or
+              substantially all of our business or another similar transaction,
+              we may transfer or disclose your personal information to a
+              purchaser or prospective purchaser, who may collect, use and
+              disclose such information for the purposes of evaluating the
+              proposed transaction or operating and managing the affairs of the
+              acquired business, or for other purposes identified in this
+              Policy. We may transfer personal information to third parties for
+              processing only if it is subject to agreements that prohibit the
+              third parties from using or disclosing the personal information
+              other than for the purpose of processing and which impose security
+              safeguards appropriate to the sensitivity of the information. We
+              may also use third-party advertising agencies to collect data
+              and/or serve ads when you visit our websites. These agencies may
+              use information (not including your name, address, email address
+              or telephone number) about your visits to this website in order to
+              provide tailored advertisements about goods and services of
+              interest to you. We reserve the right to disclose your personal
+              information as required by law, in response to legal process and
+              law enforcement requests. Our website may contain links to
+              websites operated by third parties. These websites may collect
+              your personal information. This Policy does not apply to the
+              practices of third parties and we do not assume any responsibility
+              for, and by using this website and/or accessing a third party's
+              website from this website you release Bluefly, and its members,
+              employees, agents, officers and directors, of any responsibility
+              for, the actions, practices and omissions of third parties. Please
+              check the privacy policy at each site you visit. In the event that
+              Bluefly is acquired by or merged with a third party entity, it
+              reserves the right to transfer or assign the information it has
+              collected from users as part of such merger, acquisition, sale, or
+              other change of control. In the unlikely event of Bluefly's
+              bankruptcy, insolvency, reorganization, receivership, or
+              assignment for the benefit of creditors, or the application of
+              laws or equitable principles affecting creditors' rights
+              generally, Bluefly may not be able to control how your personal
+              information is treated, transferred, or used. How can you exercise
+              my choices about receiving promotions? If we ask for your personal
+              information for a secondary reason, like promotions, we will
+              either ask you directly for your expressed consent or provide you
+              with an opportunity to opt out. If you prefer not to receive
+              promotional information from us or if you do not want us to use
+              your information to enhance your shopping experience, please let
+              us know by using one of the following methods: (i) email us at
+              privacy@bluefly.com, or (ii) send your request to 1111 Brickell
+              Ave, Suite 2200, Miami, FL 33131. Please be sure to include your
+              full name and the e-mail address you used when you registered with
+              or made a purchase from us. It may take up to 30 days to process
+              your postal mail request, during which period you may continue to
+              receive communications from us. You may also unsubscribe from our
+              email services by using the unsubscribe link situated at the
+              bottom of any promotional message you receive from us. What are
+              cookies and how do we use cookies on its site? The site uses
+              cookie technology to improve the quality of your experience. A
+              cookie is a small text file that is downloaded onto ‘terminal
+              equipment’ (for example, a computer or smartphone) when the user
+              accesses a website. It allows the website to recognize that user’s
+              device and store some information about the user’s preferences or
+              past actions. They keep a record of your preferences making your
+              subsequent visits to the site more efficient. Cookies may store a
+              variety of information, including, the number of times that you
+              access a site, registration information and the number of times
+              that you view a particular page or other item on the site. The use
+              of cookies is a common practice adopted by most major sites to
+              better serve their clients. We use cookies to ensure that we give
+              you the best possible experience on our website. If you do not
+              want to accept cookies, you can block them by adjusting the
+              settings on your internet browser. Please note that this
+              adjustment may also block cookies for any website you visit. You
+              can visit www.aboutcookies.org, which provides detailed
+              information on managing cookies in popular browsers. Blocking
+              cookies may affect your ability to benefit from the convenience
+              afforded by the use of cookies, may affect your ability to use
+              certain customization features associated with creating a user
+              profile, and if the cookies are necessary for the website to
+              operate properly, may affect your experience of the website. How
+              can you access or change your personal information, withdraw your
+              consent, or make inquiries or complaints in relation to this
+              Policy and our privacy practices? We make our best efforts to
+              ensure that the personal information we collect is as accurate,
+              complete, and up-to-date as is necessary for the purposes for
+              which it is to be used. You are entitled to request access to and
+              correction of your personal information collected by us. In order
+              to make such a request, or if you have any questions or to make
+              any complaint in relation to this Policy and our privacy
+              practices, please email our Privacy Compliance Officer at
+              privacy@bluefly.com and by writing to:
+            </p>
+            <p>1111 Brickell Ave Suite 2200 Miami, FL 33131</p>
+            <p>
+              If you have consented to the collection, use and/or disclosure of
+              personal information as identified herein, please note that you
+              can also withdraw your consent at any time by communicating with
+              us as provided above. Please note that it may take up to 30 days
+              to process your requests. How long is personal information
+              retained? We will keep your personal information only so long as
+              it is reasonably necessary for the purposes described in this
+              Policy or such longer period as may be required by applicable law.
+              How is personal information secured? We have adopted appropriate
+              measures to ensure the confidentiality of personal information and
+              to safeguard personal information against loss or theft, as well
+              as unauthorized access, disclosure, copying, use or modification,
+              in light of, among other things, the sensitivity of the
+              information and the purposes for which it is to be used.
+            </p>
+            <p>
+              To protect your personal information, we take reasonable
+              precautions and follow industry best practices to make sure it is
+              not inappropriately lost, misused, accessed, disclosed, altered or
+              destroyed. If you provide us with your credit card information,
+              the information is encrypted using secure socket layer technology
+              (SSL) and stored with proper encryption. Although no method of
+              transmission over the Internet or electronic storage is 100%
+              secure, we adhere to generally accepted industry standards.
+            </p>
+            <h1>Mobile Terms of Service</h1>
+            <h3>BLUEFLY</h3>
+            <p>Last updated: Aug. 31, 2022</p>
+            <p>
+              The BLUEFLY mobile message service (the "Service") is operated by
+              BLUEFLY (“BLUEFLY”, “we”, or “us”). Your use of the Service
+              constitutes your agreement to these terms and conditions (“Mobile
+              Terms”). We may modify or cancel the Service or any of its
+              features without notice. To the extent permitted by applicable
+              law, we may also modify these Mobile Terms at any time and your
+              continued use of the Service following the effective date of any
+              such changes shall constitute your acceptance of such changes. By
+              consenting to BLUEFLY’s SMS/text messaging service, you agree to
+              receive recurring SMS/text messages from and on behalf of BLUEFLY
+              through your wireless provider to the mobile number you provided,
+              even if your mobile number is registered on any state or federal
+              Do Not Call list. Text messages may be sent using an automatic
+              telephone dialing system or other technology. Service-related
+              messages may include updates, alerts, and information (e.g., order
+              updates, account alerts, etc.). Promotional messages may include
+              promotions, specials, and other marketing offers (e.g., cart
+              reminders). You understand that you do not have to sign up for
+              this program in order to make any purchases, and your consent is
+              not a condition of any purchase with BLUEFLY. Your participation
+              in this program is completely voluntary.
+            </p>
+            <p>
+              We do not charge for the Service, but you are responsible for all
+              charges and fees associated with text messaging imposed by your
+              wireless provider. Message frequency varies. Message and data
+              rates may apply. Check your mobile plan and contact your wireless
+              provider for details. You are solely responsible for all charges
+              related to SMS/text messages, including charges from your wireless
+              provider.
+            </p>
+            <p>
+              You may opt-out of the Service at any time. Text the single
+              keyword command STOP to +18337070811 or click the unsubscribe link
+              (where available) in any text message to cancel. You'll receive a
+              one-time opt-out confirmation text message. No further messages
+              will be sent to your mobile device, unless initiated by you. If
+              you have subscribed to other BLUEFLY mobile message programs and
+              wish to cancel, except where applicable law requires otherwise,
+              you will need to opt out separately from those programs by
+              following the instructions provided in their respective mobile
+              terms. For Service support or assistance, text HELP to
+              +18337070811 or email privacy@bluefly.com. We may change any short
+              code or telephone number we use to operate the Service at any time
+              and will notify you of these changes. You acknowledge that any
+              messages, including any STOP or HELP requests, you send to a short
+              code or telephone number we have changed may not be received and
+              we will not be responsible for honoring requests made in such
+              messages. The wireless carriers supported by the Service are not
+              liable for delayed or undelivered messages. You agree to provide
+              us with a valid mobile number. If you get a new mobile number, you
+              will need to sign up for the program with your new number. To the
+              extent permitted by applicable law, you agree that we will not be
+              liable for failed, delayed, or misdirected delivery of any
+              information sent through the Service, any errors in such
+              information, and/or any action you may or may not take in reliance
+              on the information or Service. We respect your right to privacy.
+              To see how we collect and use your personal information, please
+              see our Privacy Notice. Changes to This Privacy Policy We reserve
+              the right to modify this privacy policy at any time, so please
+              review it frequently. Changes and clarifications will take effect
+              immediately upon their posting on the website. If we make material
+              changes to this policy, we will notify you here that it has been
+              updated, so that you are aware of what information we collect, how
+              we use it, and under what circumstances, if any, we use and/or
+              disclose it.
+            </p>
+            <h3>Questions and Contact Information</h3>
+            <p>
+              If you would like to: access, correct, amend or delete any
+              personal information we have about you, register a complaint, or
+              simply want more information contact our Privacy Compliance
+              Officer at privacy@bluefly.com or by mail at:
+            </p>
+            <p>1111 Brickell Ave</p>
+            <p>Suite 2200</p>
+            <p>Miami, FL 33131</p>
+          </div>
+          <div id="fade"></div>
+          <p>
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('four').style.display='block';document.getElementById('fade').style.display='block'"
+              >Terms of service</a
+            >
+          </p>
+          <div id="four" class="white_content">
+            <a
+              href="javascript:void(0)"
+              onclick="document.getElementById('four').style.display='none';document.getElementById('fade').style.display='none'"
+              ><img
+                id="cros"
+                src="https://www.pngitem.com/pimgs/m/170-1700003_transparent-background-cross-symbol-hd-png-download.png"
+                alt=""
+            /></a>
+            <h1>Terms of service</h1>
+            <p>
+              This website Bluefly.com is owned, operated and distributed by
+              Bluefly D.B.A. Bluefly.com LLC., a Florida corporation
+              ("Bluefly"). BY ACCESSING ANY PART OF THE WEBSITE, YOU ARE
+              AGREEING TO THE TERMS AND CONDITIONS DESCRIBED BELOW (THE
+              "CONDITIONS OF USE") AND THE TERMS AND CONDITIONS OF THE BLUEFLY
+              PRIVACY POLICY (THE "POLICY"). IF YOU DO NOT AGREE TO ANY OF THESE
+              TERMS, YOU SHOULD NOT USE THE WEBSITE. These Conditions of Use
+              apply to all users, including both users who are simply viewing
+              the Website and users who are purchasing goods through the
+              Website.
+            </p>
+            <p>
+              You acknowledge that Bluefly may terminate your account, remove
+              any data or content that you have provided and/or disable your
+              access to the Website, in whole or part, at any time for any
+              reason or no reason, with or without notice and with no liability
+              of any kind. In addition, Bluefly may modify or remove any service
+              or functionality included in the Website at any time, with or
+              without notice and with no liability of any kind.
+            </p>
+            <p>
+              These Conditions of Use, and any rights and licenses granted
+              hereunder, may not be transferred or assigned by you, but may be
+              assigned by Bluefly without restriction. Use of the Web Site is
+              only available only to individuals who are at least 13 years old.
+              If you are not 13 years old, you are not authorized to use the
+              Website. Bluefly may, at its sole discretion, modify these
+              Conditions of Use at any time. By accessing the Website at any
+              time after such modifications, you are agreeing to such
+              modifications. These Conditions of Use were last modified as of
+              October 1, 2019. Important Disclaimer Bluefly offers only the best
+              brand names and highest quality goods, and proudly stands behind
+              the authenticity of its goods. In some instances, these goods may
+              not be obtained directly from the designers but rather may have
+              been purchased from reputable resellers at a discount. In this
+              regard, Bluefly expressly disclaims any indication that it is an
+              authorized dealer or agent of any of the designers whose goods are
+              offered on this site.
+            </p>
+            <p>
+              Bluefly reserves the right to refuse any order placed on the
+              Website, and may, in its sole discretion, limit or cancel
+              quantities purchased per person, per household or per order. These
+              restrictions may include orders placed by or under the same
+              customer account, the same credit card, and/or orders that use the
+              same billing and/or shipping address. In the event Bluefly makes a
+              change to or cancels an order, it will attempt to notify you by
+              contacting the e-mail and/or billing address/phone number provided
+              at the time the order was made. Bluefly reserves the right to
+              limit or prohibit orders that, in our sole judgment, appear to be
+              placed by dealers, resellers or distributors, or to refuse to
+              service a customer for any reason. All goods purchased from
+              Bluefly.com are F.O.B. at our fulfillment center. Title to goods
+              passes to you at the time of delivery by the fulfillment center to
+              a common carrier. Sales tax is applied to your Bluefly.com order
+              in accordance with individual state and local regulations if your
+              shipping address is in one of the following states: Florida and
+              California. Appropriate tax charges will appear on the "Review
+              Order" page during checkout.
+            </p>
+            <h3>Security</h3>
+            <p>
+              Because Bluefly uses some of the most sophisticated commercially
+              available security software, it is extremely unlikely that any
+              personal information that you transmit to us will be
+              misappropriated. In the rare instance that an unauthorized person
+              obtains your credit card information and uses it, by federal law,
+              you are only liable for the first $50. In any instance where you
+              have discovered or suspect fraud, you need to contact your credit
+              card companies immediately.
+            </p>
+            <h3>Product information</h3>
+            <p>
+              Occasionally there may be information on the Website that contains
+              typographical errors, inaccuracies, or omissions that may relate
+              to product descriptions, pricing, promotions, offers, and
+              availability. Bluefly reserves the right to correct any errors,
+              inaccuracies or omissions and to change or update information or
+              cancel orders if any information on the Website is inaccurate at
+              any time without prior notice (including after you have submitted
+              your order). Bluefly has made every effort to display as
+              accurately as possible the colors of the products that appear on
+              the Website. However, Bluefly cannot guarantee that your computer
+              monitor's display of any color will be accurate. Links to Other
+              Web Sites and Services The Website may contain links to other
+              Websites that are not under the control of Bluefly. Bluefly has no
+              responsibility for the linked Web sites nor does linking
+              constitute an endorsement of any linked Web site. Links are
+              provided solely for the convenience and information of the
+              Websites' users.
+            </p>
+          </div>
+          <div id="fade"></div>
+        </div>
+      </div>
+      <div id="cart-details-div"></div>
     </div>
-</body>
+  </body>
 </html>
 <script src="walletdetails.js"></script>
+<script type="module">
+  import {
+    headerHtml,
+    headerJS,
+    topSliderTxt,
+    bagSideClose,
+    bagSideOpen,
+    cartsliderhtml,
+  } from "./components/header.js";
+  document.querySelector("#nav_header").innerHTML = headerHtml();
+  document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
+  headerJS();
+  topSliderTxt();
+  bagSideOpen();
+  bagSideClose();
+</script>

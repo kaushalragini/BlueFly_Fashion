@@ -1,0 +1,10 @@
+#slider {
+  text-align: center;
+
+  color: white;
+}
+#slider > h4 {
+  align-items: center;
+  background-color: #0f0f0f;
+  padding: 10px 0px;
+}

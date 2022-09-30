@@ -48,7 +48,7 @@ bigImg = () => {
     bi.append(div);
   });
 };
-bigImg();
+// bigImg();
 
 var productImg = document.getElementById("Productimg");
 var smallImg = document.getElementsByClassName("smallimg");
@@ -155,3 +155,76 @@ smallImg[2].addEventListener("click", function () {
 smallImg[3].addEventListener("click", function () {
   productImg.src = smallImg[3].src;
 });
+
+let data_to_display = JSON.parse(localStorage.getItem("productToShow"));
+
+const displayProduct = () => {
+  let bigImg = document.querySelector("#bigimg");
+  let img = document.createElement("img");
+  img.setAttribute("id", "Productimg");
+  img.src = data_to_display.img[0];
+  bigImg.append(img);
+
+  let detailSection = document.querySelector("#last");
+  let brandName = document.querySelector("#gucchih3");
+  // brandName.setAttribute("id", "gucchih3");
+  brandName.innerText = data_to_display.product_name.split(" ")[0];
+
+  let brandTitle = document.querySelector("#gucchih1");
+  // brandTitle.setAttribute("id", "gucchih1");
+  brandTitle.innerText = data_to_display.product_name;
+  // detailSection.append(brandName, brandTitle);
+
+  let oldPrice = document.querySelector(".span1");
+  oldPrice.innerText = data_to_display.new_price;
+  let newPrice = document.querySelector(".span2");
+  newPrice.innerText = data_to_display.previousprice;
+};
+
+displayProduct();
+
+document.querySelector("#ATC").addEventListener("click", () => {
+  let data_to_display = JSON.parse(localStorage.getItem("productToShow"));
+  // console.log(data_to_display);
+  let productAddedToCart = JSON.parse(localStorage.getItem("cart_items")) || [];
+
+  if (productAddedToCart.length === 0) {
+    let newObj = {};
+    newObj[JSON.stringify(data_to_display)] = 1;
+    productAddedToCart.push(newObj);
+  } else {
+    productAddedToCart.forEach((productObj, i) => {
+      console.log(productObj);
+      for (key in productObj) {
+        console.log(key);
+        key = JSON.parse(key);
+        if (productObj[key] === undefined) {
+          alert("aa");
+          let newObj = {};
+          newObj[JSON.stringify(data_to_display)] = 1;
+          productAddedToCart.push(newObj);
+        } else {
+          alert("bb");
+          console.log(productAddedToCart);
+          productAddedToCart[key]++;
+        }
+      }
+    });
+  }
+
+  localStorage.setItem("cart_items", JSON.stringify(productAddedToCart));
+});
+
+/*
+{a:1, b:3,c:4}
+aa = [
+  {{a:1, b:3,c:4}:1},
+  {{a:1, b:1,c:4}:1},
+  {{a:2, b:2}:2}
+]
+aa.forEach(function(ele, i){
+  for (let key in ele){
+
+  }
+});
+*/

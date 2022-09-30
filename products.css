@@ -105,7 +105,7 @@
 #bigone {
   margin: auto;
   width: 75%;
-  border: 1px solid black;
+  border: 0px solid black;
   margin-top: 55px;
 }
 #common {
@@ -208,7 +208,7 @@
   color: black;
   margin: auto;
   height: 30px;
-  border: 1px solid black;
+  border: 0 solid black;
   font-size: 15px;
   cursor: pointer;
 }
@@ -223,7 +223,7 @@
   color: black;
   margin: auto;
   height: 30px;
-  border: 1px solid black;
+  border: 0px solid black;
   font-size: 15px;
   cursor: pointer;
 }
@@ -239,7 +239,7 @@
   color: black;
   margin: auto;
   height: 30px;
-  border: 1px solid black;
+  border: 0px solid black;
   font-size: 15px;
   cursor: pointer;
 }
@@ -259,7 +259,7 @@
   display: block;
   margin: 10px auto;
   text-align: center;
-  border: 1px solid #535455;
+  border: 0px solid #535455;
   padding: 10px 10px;
   width: 200px;
   outline: none;

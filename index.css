@@ -1,172 +1,185 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-#slider{
-    text-align: center;
-    /* border: 1px solid red; */
-    color: white;
+#slider1 > img {
+  width: 100%;
+  height: 450px;
 }
-#slider>h4{
-    /* border: 1px solid white; */
-    align-items: center;
-    background-color: #0f0f0f;
-    padding: 10px 0px;
+#shop {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  gap: 15px;
 }
-#slider1{
-    /* border: 1px solid red; */
-
+#shop img {
+  width: 100%;
 }
-#slider1>img{
-    width: 100%;
-    height: 450px;
+#category {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-#shop{
-    display: flex;
-    width: 95%;
-    margin: auto;
-    margin-top: 20px;
-    gap: 15px;
+#heading > h1 {
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 30px;
 }
-#shop img{
-    width: 100%;
-    
+#category img {
+  width: 90%;
+  height: 300px;
 }
-#category{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+#category p {
+  /* border: 1px solid red; */
+  text-align: center;
 }
-#heading>h1{
-    text-align: center;
-     padding: 20px 0px;
-     margin-top: 30px;
+#slider2 {
+  margin-top: 30px;
 }
-#category img{
-    width: 90%;
-    height: 300px;
+#slider2 > img {
+  width: 100%;
+  height: 400px;
 }
-#category p{
-    /* border: 1px solid red; */
-    text-align: center;
+#heading1 > h1 {
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 30px;
 }
-#slider2{
-    margin-top: 30px;
+#heading1 button {
+  /* border: 1px solid red; */
+  display: block;
+  margin: auto;
+  padding: 8px 20px;
 }
-#slider2>img{
-    width: 100%;
-    height: 400px;
+#newArrivals {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 95%;
+  margin: auto;
 }
-#heading1>h1{
-    text-align: center;
-     padding: 20px 0px;
-     margin-top: 30px;
+#newArrivals > div > a > img {
+  width: 100%;
+  height: 300px;
 }
-#heading1 button{
-    /* border: 1px solid red; */
-    display: block;
-    margin: auto;
-    padding: 8px 20px;
+#newArrivals > div > p {
+  /* border: 1px solid red; */
+  width: 80%;
+  text-align: center;
 }
-#newArrivals{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 95%;
-    margin: auto;
+#newArrivals > div > p > span {
+  color: red;
 }
-#newArrivals>div>a>img{
-    width: 100%;
-    height: 300px;
+#heading2 > h1 {
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 30px;
 }
-#newArrivals>div>p{
-    /* border: 1px solid red; */
-    width: 80%;
-    text-align: center;
+#heading2 button {
+  /* border: 1px solid red; */
+  display: block;
+  margin: auto;
+  padding: 8px 20px;
 }
-#newArrivals>div>p>span{
-    color: red;
+#trandingNow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 95%;
+  margin: auto;
 }
-#heading2>h1{
-    text-align: center;
-     padding: 20px 0px;
-     margin-top: 30px;
+#trandingNow > div > a > img {
+  width: 100%;
+  height: 300px;
 }
-#heading2 button{
-    /* border: 1px solid red; */
-    display: block;
-    margin: auto;
-    padding: 8px 20px;
+#trandingNow > div > p {
+  /* border: 1px solid red; */
+  width: 80%;
+  text-align: center;
 }
-#trandingNow{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 95%;
-    margin: auto;
+#trandingNow > div > p > span {
+  color: red;
 }
-#trandingNow>div>a>img{
-    width: 100%;
-    height: 300px;
-}
-#trandingNow>div>p{
-    /* border: 1px solid red; */
-    width: 80%;
-    text-align: center;
-}
-#trandingNow>div>p>span{
-    color: red;
-}
-
 
 /* slide show */
 
+/* .parent {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.child {
+  
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
+}
+.child img {
+  width: 100%;
+  height: 200px;
+}
+#leftarrow,
+#rightarrow {
+  margin-left: 12px;
+  width: 3%;
+  display: inline-block;
+}
+#leftarrow button,
+#rightarrow button {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+} */
+
 html,
-      body {
-        position: relative;
-        /* height: 100%; */
-      }
+body {
+  position: relative;
+  /* height: 100%; */
+}
 
-      body {
-        /* background: #eee; */
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        /* color: #000; */
-        margin: 0;
-        padding: 0;
-      }
+body {
+  /* background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  /* color: #000; */
+  margin: 0;
+  padding: 0;
+}
 
-      .swiper {
-        width: 95%;
-        /* border: 1px solid red; */
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
+.swiper {
+  width: 95%;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-      
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 650px;
-        object-fit: cover;
-        box-shadow: rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-      }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  box-shadow: rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

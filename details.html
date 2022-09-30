@@ -5,23 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/18dcf284b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="navbar.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="export.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="cartslider.css" />
   </head>
   <body>
+    <div id="nav_header"></div>
+    <div id="slider"></div>
+    <div id="mySidebar" class="sidebar"></div>
     <div id="maindiv">
       <div id="productimg"></div>
       <div id="bigimg"></div>
       <div id="last">
-        <h3 id="gucchih3">GUCCI</h3>
-        <h1 id="gucchih1">
-          GUCCI GG MARMONT SMALL MATELASSE LEATHER SHOULDER BAG
-        </h1>
-        <span class="span1">$2,550.00</span>
-        <span class="span2">$1,798.99</span>
+        <h3 id="gucchih3"></h3>
+        <!--GUCCI-->
+        <h1 id="gucchih1"></h1>
+        <!--GUCCI GG MARMONT SMALL MATELASSE LEATHER SHOULDER BAG-->
+        <span class="span1"></span>
+        <!--$2,550.00-->
+        <span class="span2"></span>
+        <!--$1,798.99-->
         <span class="span3">Save 29%</span>
         <p class="p">Final Sale</p>
         <p class="p1">FREE SHIPPING ON ORDERS OVER $99</p>
@@ -33,12 +46,12 @@
           sizing.)
         </span>
         <label id="label2" for="">Medium</label>
-        <p id="beige">COLOR — Beige</p>
-        <label for="beige" id="lebal3"
+        <!-- <p id="beige">COLOR — Beige</p> -->
+        <!-- <label for="beige" id="lebal3"
           ><img
             src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1160127531_RLLZ_1_50x.jpg"
             alt=""
-        /></label>
+        /></label> -->
         <button id="ATC">ADD TO CART</button>
         <h4 id="h4">FINAL SALE: No Returns or Exchanges are accepted.</h4>
         <p id="divp">Usually ships in 1 to 2 business days</p>
@@ -75,11 +88,28 @@
 
     <h1 id="h1hu">YOU MAY ALSO LIKE</h1>
     <div id="maintwo"></div>
+    <div id="page_footer"></div>
   </body>
 </html>
 <script src="detail.js"></script>
 <script type="module">
-  import { headerHtml, headerJS } from "./components/header.js";
+  import {
+    headerHtml,
+    headerJS,
+    topSliderTxt,
+    bagSideClose,
+    bagSideOpen,
+    cartsliderhtml,
+  } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
   headerJS();
+  topSliderTxt();
+  bagSideOpen();
+  bagSideClose();
+</script>
+
+<script type="module">
+  import footer from "./components/export.js";
+  document.querySelector("#page_footer").innerHTML = footer();
 </script>

@@ -20,7 +20,7 @@
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
   color: #000;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 #main {
   width: 35%;
@@ -34,7 +34,7 @@
   margin: auto;
 }
 #login {
-  border: px solid red;
+  border: 0px solid red;
   height: auto;
   display: grid;
   margin: auto;

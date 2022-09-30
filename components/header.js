@@ -1,3 +1,23 @@
+const bagSideOpen = () => {
+  document.querySelector("#spi").addEventListener("click", () => {
+    document.querySelector("#mySidebar").style.width = "350px";
+    // document.getElementById("#main").style.marginLeft = "0";
+  });
+};
+
+const bagSideClose = () => {
+  document.querySelector("#closeTab").addEventListener("click", () => {
+    document.querySelector("#mySidebar").style.width = "0";
+    // document.getElementById("main").style.marginLeft = "0";
+  });
+};
+const cartsliderhtml = () => {
+  return ` <a href="javascript:void(0)" class="closebtn" id="closeTab">&times;</a>
+    <div id="car">CART</div>
+    <!-- <hr /> -->
+    <div id="bro">Your Cart is Empty</div>`;
+};
+
 const headerHtml = () => {
   return `
     <div id="fb">
@@ -23,7 +43,7 @@ const headerHtml = () => {
     <div class="container">
         <ul>
             <li>
-                <a href="@">CLOTHING</a>
+                <a href="products.html">CLOTHING</a>
                  <div class="meg">
                     <div id="box1">
                         <div>
@@ -73,7 +93,7 @@ const headerHtml = () => {
                     </div>
                  </div>
             </li>
-            <li><a href="@">SHOES</a>
+            <li><a href="products.html">SHOES</a>
                 <div class="meg">
                     <div id="box2"> 
                          <div>
@@ -153,7 +173,7 @@ const headerHtml = () => {
                     </div>
                 </div>
             </li>
-            <li><a href="@">HANDBAGS&ACCESSORIES</a>
+            <li><a href="products.html">HANDBAGS&ACCESSORIES</a>
                 <div class="meg">
                     <div id="box3">
                         <div>
@@ -226,7 +246,7 @@ const headerHtml = () => {
                     </div>
                 </div>
             </li>
-            <li><a href="@">DESIGNERS</a>
+            <li><a href="products.html">DESIGNERS</a>
                 <div class="meg">
                     <div id="box4">
                        <div>
@@ -272,7 +292,7 @@ const headerHtml = () => {
                     </div>
                 </div>
             </li>
-            <li><a href="@">SUNGLASSES</a>
+            <li><a href="products.html">SUNGLASSES</a>
                 <div class="meg">
                     <div id="box5">
                         <div>
@@ -322,7 +342,7 @@ const headerHtml = () => {
                 </div>
             
             </li>
-            <li><a href="@">JEWALRY&WATCHES</a>
+            <li><a href="products.html">JEWALRY&WATCHES</a>
                 <div class="meg">
                     <div id="box6">
                         <div>
@@ -381,7 +401,7 @@ const headerHtml = () => {
                     </div>
                 </div>
             </li>
-            <li><a href="@">JUNDER $50</a>
+            <li><a href="products.html">JUNDER $50</a>
                 <div class="meg">
                     <div id="box7">
                         <div>
@@ -404,7 +424,7 @@ const headerHtml = () => {
                     </div>
                 </div>
             </li>
-            <li><a href="@">BEAUTY</a>
+            <li><a href="products.html">BEAUTY</a>
                 <div class="meg">   
                     <div id="box8">
                         <div>
@@ -426,10 +446,10 @@ const headerHtml = () => {
                   </div>
                 </div>
             </li>
+            <li style="color:red" ><a href="products.html">CLEARANCE</a></li>
         </ul>
     </div>
   </div>
-  <div id="bottomblack">WELCOME TO BLUEFLY: luxury brands at disscounted prices</div>
     `;
 };
 
@@ -439,7 +459,41 @@ const headerJS = () => {
   });
 };
 
+const topSliderTxt = () => {
+  const arr = [
+    "FREE SHIPPING On Order Over $99",
+    "WELCOME TO BLUEFLY: Luxury brands of discounted price",
+    "HAVE A QUESTION: Get Help Form FlyRep@Bluefly.com",
+  ];
 
-  
+  let i = 0;
 
-export { headerHtml, headerJS};
+  let div = document.getElementById("slider");
+
+  let txt = document.createElement("h4");
+  txt.innerText = arr[0];
+
+  div.append(txt);
+  i++;
+
+  setInterval(function () {
+    if (i == 3) {
+      i = 0;
+    }
+    txt.innerText = arr[i];
+    i++;
+
+    div.append(txt);
+  }, 2500);
+};
+
+export {
+  headerHtml,
+  headerJS,
+  topSliderTxt,
+  bagSideClose,
+  bagSideOpen,
+  cartsliderhtml,
+};
+
+//<div id="bottomblack">WELCOME TO BLUEFLY: luxury brands at disscounted prices</div>
