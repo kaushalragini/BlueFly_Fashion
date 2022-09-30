@@ -1093,9 +1093,8 @@ function displayProducts(data) {
     // mainDiv.innerText = "";
     mainDiv.setAttribute("class", "cont");
     mainDiv.addEventListener("click", function () {
-
-      localStorage.setItem("productToShow",JSON.stringify(ele))
-      window.location = "productdetail.html";
+      localStorage.setItem("productToShow", JSON.stringify(ele));
+      window.location = "details.html";
     });
 
     let imgDiv = document.createElement("div");

@@ -20,7 +20,7 @@
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 #nav_header {
-  position: fixed;
+  /* position: fixed; */
   background-color: #fff;
   width: 100%;
 }
@@ -32,7 +32,7 @@
   display: flex;
 }
 .container > ul > li {
-  padding: 30px;
+  padding: 20px;
   list-style: none;
 }
 .container > ul > li > a {
@@ -159,10 +159,11 @@
 }
 #icon {
   display: flex;
-  gap: 1px;
+  gap: 8px;
   border: 0px solid blue;
   width: 300px;
-  justify-content: space-evenly;
+  cursor: pointer;
+  /* justify-content: space-evenly; */
 }
 #icon > div > img {
   border: 0px solid red;

@@ -14,7 +14,7 @@ const headerHtml = () => {
     <div class="container">
         <ul>
             <li>
-                <a href="@">CLOTHING</a>
+                <a href="products.html">CLOTHING</a>
                  <div class="meg">
                     <div id="box1">
                         <div>

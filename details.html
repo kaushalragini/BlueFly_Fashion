@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="export.css" />
   </head>
   <body>
+    <div id="nav_header"></div>
     <div id="maindiv">
       <div id="productimg"></div>
       <div id="bigimg"></div>
@@ -75,6 +78,7 @@
 
     <h1 id="h1hu">YOU MAY ALSO LIKE</h1>
     <div id="maintwo"></div>
+    <div id="page_footer"></div>
   </body>
 </html>
 <script src="detail.js"></script>
@@ -82,4 +86,9 @@
   import { headerHtml, headerJS } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
   headerJS();
+</script>
+
+<script type="module">
+  import footer from "./components/export.js";
+  document.querySelector("#page_footer").innerHTML = footer();
 </script>
