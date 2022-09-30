@@ -141,10 +141,10 @@
 #icon {
   display: flex;
   gap: 30px;
-  border: 0px solid blue;
+  border: 1px solid blue;
 }
 #icon > div > img {
-  border: 0px solid red;
+  border: 1px solid red;
   width: 50px;
   width: 20px;
   padding-left: 90px;
