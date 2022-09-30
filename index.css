@@ -1,150 +1,135 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-#slider{
-    text-align: center;
-    /* border: 1px solid red; */
-    color: white;
+#slider1 > img {
+  width: 100%;
+  height: 450px;
 }
-#slider>h4{
-    /* border: 1px solid white; */
-    align-items: center;
-    background-color: #0f0f0f;
-    padding: 10px 0px;
+#shop {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  gap: 15px;
 }
-#slider1{
-    /* border: 1px solid red; */
-
+#shop img {
+  width: 100%;
 }
-#slider1>img{
-    width: 100%;
-    height: 450px;
+#category {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-#shop{
-    display: flex;
-    width: 95%;
-    margin: auto;
-    margin-top: 20px;
-    gap: 15px;
+#heading > h1 {
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 30px;
 }
-#shop img{
-    width: 100%;
-    
+#category img {
+  width: 90%;
+  height: 300px;
 }
-#category{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+#category p {
+  /* border: 1px solid red; */
+  text-align: center;
 }
-#heading>h1{
-    text-align: center;
-     padding: 20px 0px;
-     margin-top: 30px;
+#slider2 {
+  margin-top: 30px;
 }
-#category img{
-    width: 90%;
-    height: 300px;
+#slider2 > img {
+  width: 100%;
+  height: 400px;
 }
-#category p{
-    /* border: 1px solid red; */
-    text-align: center;
+#heading1 > h1 {
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 30px;
 }
-#slider2{
-    margin-top: 30px;
+#heading1 button {
+  /* border: 1px solid red; */
+  display: block;
+  margin: auto;
+  padding: 8px 20px;
 }
-#slider2>img{
-    width: 100%;
-    height: 400px;
+#newArrivals {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 95%;
+  margin: auto;
 }
-#heading1>h1{
-    text-align: center;
-     padding: 20px 0px;
-     margin-top: 30px;
+#newArrivals > div > a > img {
+  width: 100%;
+  height: 300px;
 }
-#heading1 button{
-    /* border: 1px solid red; */
-    display: block;
-    margin: auto;
-    padding: 8px 20px;
+#newArrivals > div > p {
+  /* border: 1px solid red; */
+  width: 80%;
+  text-align: center;
 }
-#newArrivals{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 95%;
-    margin: auto;
+#newArrivals > div > p > span {
+  color: red;
 }
-#newArrivals>div>a>img{
-    width: 100%;
-    height: 300px;
+#heading2 > h1 {
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 30px;
 }
-#newArrivals>div>p{
-    /* border: 1px solid red; */
-    width: 80%;
-    text-align: center;
+#heading2 button {
+  /* border: 1px solid red; */
+  display: block;
+  margin: auto;
+  padding: 8px 20px;
 }
-#newArrivals>div>p>span{
-    color: red;
+#trandingNow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 95%;
+  margin: auto;
 }
-#heading2>h1{
-    text-align: center;
-     padding: 20px 0px;
-     margin-top: 30px;
+#trandingNow > div > a > img {
+  width: 100%;
+  height: 300px;
 }
-#heading2 button{
-    /* border: 1px solid red; */
-    display: block;
-    margin: auto;
-    padding: 8px 20px;
+#trandingNow > div > p {
+  /* border: 1px solid red; */
+  width: 80%;
+  text-align: center;
 }
-#trandingNow{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 95%;
-    margin: auto;
+#trandingNow > div > p > span {
+  color: red;
 }
-#trandingNow>div>a>img{
-    width: 100%;
-    height: 300px;
-}
-#trandingNow>div>p{
-    /* border: 1px solid red; */
-    width: 80%;
-    text-align: center;
-}
-#trandingNow>div>p>span{
-    color: red;
-}
-
 
 /* slide show */
 
-.parent{
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
+.parent {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
-.child{
-    /* background-color: blue; */
-    width: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: none;
+.child {
+  /* background-color: blue; */
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
 }
-.child img{
-    width: 100%;
-    height: 200px;
+.child img {
+  width: 100%;
+  height: 200px;
 }
-#leftarrow,#rightarrow{
-    margin-left: 12px;
-    width: 3%;
-    display: inline-block;
+#leftarrow,
+#rightarrow {
+  margin-left: 12px;
+  width: 3%;
+  display: inline-block;
 }
-#leftarrow button,#rightarrow button{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
+#leftarrow button,
+#rightarrow button {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
 }

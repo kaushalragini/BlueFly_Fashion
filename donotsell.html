@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="export.css" />
     <link rel="stylesheet" href="donotsell.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="cartslider.css" />
     <script
-    src="https://kit.fontawesome.com/18dcf284b5.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/18dcf284b5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="nav_header"></div>
+    <div id="slider"></div>
+    <div id="mySidebar" class="sidebar"></div>
     <div id="dont-sell">
       <h1>DO NOT SELL MY PERSONAL INFORMATION</h1>
       <h1>YOUR RIGHTS UNDER THE CALIFORNIA CONSUMER PRIVACY ACT</h1>
@@ -41,8 +45,19 @@
   </body>
 </html>
 <script type="module">
-  import { headerHtml ,headerJS } from "./components/header.js";
+  import {
+    headerHtml,
+    headerJS,
+    topSliderTxt,
+    bagSideClose,
+    bagSideOpen,
+    cartsliderhtml,
+  } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
   headerJS();
+  topSliderTxt();
+  bagSideOpen();
+  bagSideClose();
 </script>
 <script type="module" src="donotsell.js"></script>

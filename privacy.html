@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="export.css" />
     <link rel="stylesheet" href="privacy.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="slider.css" />
     <script
       src="https://kit.fontawesome.com/18dcf284b5.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="cartslider.css" />
   </head>
   <body>
     <div id="nav_header"></div>
+    <div id="slider"></div>
+    <div id="mySidebar" class="sidebar"></div>
 
     <div id="privacy">
       <h1>PRIVACY POLICY</h1>
@@ -336,7 +340,18 @@
 </html>
 <script type="module" src="privacy.js"></script>
 <script type="module">
-  import { headerHtml, headerJS } from "./components/header.js";
+  import {
+    headerHtml,
+    headerJS,
+    topSliderTxt,
+    bagSideClose,
+    bagSideOpen,
+    cartsliderhtml,
+  } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
   headerJS();
+  topSliderTxt();
+  bagSideOpen();
+  bagSideClose();
 </script>

@@ -14,9 +14,13 @@
   </head>
   <link rel="stylesheet" href="signup.css" />
   <link rel="stylesheet" href="export.css" />
+  <link rel="stylesheet" href="slider.css" />
+  <link rel="stylesheet" href="cartslider.css" />
 
   <body>
     <div id="nav_header"></div>
+    <div id="slider"></div>
+    <div id="mySidebar" class="sidebar"></div>
 
     <div id="main">
       <div id="sign">
@@ -47,9 +51,20 @@
 </html>
 <script src="signup.js"></script>
 <script type="module">
-  import { headerHtml, headerJS } from "./components/header.js";
+  import {
+    headerHtml,
+    headerJS,
+    topSliderTxt,
+    bagSideClose,
+    bagSideOpen,
+    cartsliderhtml,
+  } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
+  document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
   headerJS();
+  topSliderTxt();
+  bagSideOpen();
+  bagSideClose();
 </script>
 
 <script type="module">

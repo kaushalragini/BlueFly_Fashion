@@ -1,32 +1,3 @@
-function topSliderTxt() {
-  const arr = [
-    "FREE SHIPPING On Order Over $99",
-    "WELCOME TO BLUEFLY: Luxury brands of discounted price",
-    "HAVE A QUESTION: Get Help Form FlyRep@Bluefly.com",
-  ];
-
-  let i = 0;
-
-  let div = document.getElementById("slider");
-
-  let txt = document.createElement("h4");
-  txt.innerText = arr[0];
-
-  div.append(txt);
-  i++;
-
-  setInterval(function () {
-    if (i == 3) {
-      i = 0;
-    }
-    txt.innerText = arr[i];
-    i++;
-
-    div.append(txt);
-  }, 2500);
-}
-topSliderTxt();
-
 function topSliderImg() {
   const arr = [
     "./slid/1.png",
