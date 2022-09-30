@@ -9,7 +9,7 @@ const login=()=>{
 
 
     if(email==confirmEmail && password==confirmPassword){
-        window.location.href="home.html"
+        window.location.href="index.html"
     }else{
         alert("Email && Password Is Incorrect ")
     };
