@@ -27,7 +27,16 @@ const headerHtml = () => {
     </div>
     <div id="icon">
         <div><i id="usr" class="fa-regular fa-user fa-2x"></i></div>
-        <div><i id="spi" class="fa-solid fa-bag-shopping fa-2x"></i></div>
+        <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
+    <div id="car">CART</div>
+    <div id="bro"></div>
+  </div>
+  
+  <div id="main">
+    <button id="spi" class="openbtn"><i class="fa-solid fa-bag-shopping" ></i> </button>
+  
+  </div>
     </div>
   </div>
   <div id="manue">

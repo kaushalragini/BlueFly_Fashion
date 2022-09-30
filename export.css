@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  /* position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -7,7 +7,23 @@
   padding-top: 25px;
   background-color: #e6e6e6;
   color: #000;
+  margin-top: 20px; */
+
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 0px;
+  padding-top: 25px;
+  background-color: #e6e6e6;
+  color: #000;
   margin-top: 20px;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 15px 0 15px;
+  text-align: center;
 }
 #container {
   margin: auto;
@@ -45,7 +61,7 @@ h3 {
   width: 60%;
   margin-left: 35px;
   margin-top: 75px;
-}
+  /* }
 #footer-div > div {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -95,5 +111,68 @@ input {
 }
 #logo {
   margin-left: 610px;
+  margin-top: 10px; */
+}
+#footer-div > div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 14px;
+}
+#btn {
+  background-color: black;
+  color: white;
+}
+#below-div {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  font-size: 15px;
+  margin-top: 50px;
+}
+#below-div > a > img {
+  width: 35%;
+  margin-bottom: 22px;
+}
+a {
+  text-decoration: none;
+}
+input {
+  height: 14px;
+  padding: 10px;
+  font-size: 20px;
+  width: 310px;
+}
+#btn {
+  height: 35px;
+  font-size: 20px;
+  margin-top: -8px;
+  width: 100%;
+}
+
+#hh4 {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+  margin-left: 35px;
+  margin-bottom: -60px;
+  margin-top: 40px;
+}
+#logo > a > img {
+  height: 30px;
+}
+#logo {
+  margin-left: 610px;
   margin-top: 10px;
+}
+#downmanlogodiv {
+  text-align: right;
+  padding: 10px;
+}
+#downmanlogo {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border: solid 2px red;
+  border-radius: 50px;
 }
