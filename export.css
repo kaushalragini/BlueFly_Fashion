@@ -3,7 +3,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     padding-top: 25px;
       background-color: #e6e6e6;
       color: #000;
@@ -83,7 +83,8 @@ margin-inline-end: 0px;
       width: 100%;
   }
 
-  #h4{
+  #hh4{
+    color: black;
      display: grid;
      grid-template-columns: repeat(2,1fr);
      width: 75%;
@@ -98,4 +99,16 @@ margin-inline-end: 0px;
     margin-left: 610px;
     margin-top: 10px;
 }
-
+#downmanlogodiv{
+    text-align: right;
+    padding: 10px;
+   
+}
+#downmanlogo{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: solid 2px red;
+    border-radius: 50px;
+    
+}
