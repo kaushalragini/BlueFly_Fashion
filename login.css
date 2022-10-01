@@ -38,10 +38,11 @@
   height: auto;
   display: grid;
   margin: auto;
+  width: 80%;
   /* position: relative; */
 }
 #login > input {
-  height: 43px;
+  height: 33px;
   border: 1px solid #e8e8e1;
   display: block;
   margin-bottom: 30px;
@@ -55,11 +56,9 @@
   -webkit-appearance: none;
   border: 1px solid #e8e8e1;
   display: grid;
-
   height: 50px;
   font-size: 14px;
   padding: 0px 0px;
-
   margin-bottom: 10px;
   text-align: center;
   text-decoration: solid;
