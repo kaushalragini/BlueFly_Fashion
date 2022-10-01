@@ -62,10 +62,10 @@ function footer() {
          <div id="below-div">
             <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt=""></a>
             <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
-           
+            <div id="downmanlogodiv">  <img id="downmanlogo" src="https://cdn.userway.org/widgetapp/images/body_wh.svg">   </div>
         </div>
 </footer>
-<div id="downmanlogodiv">  <img id="downmanlogo" src="https://cdn.userway.org/widgetapp/images/body_wh.svg">   </div> `;
+ `
 }
 
 export default footer;

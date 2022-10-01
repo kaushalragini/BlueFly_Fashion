@@ -1,5 +1,8 @@
 #maindiv {
   display: flex;
+  border: px solid red;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 #firstdiv {
   border: px solid red;
@@ -17,7 +20,7 @@
   border: 2px solid black;
 }
 #bigimg > img {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
   justify-content: center;
@@ -26,10 +29,10 @@
 #bigimg {
   border: px solid red;
   margin: auto;
-  width: 809px;
-  height: 511px;
+  width: 100%;
+  height: auto;
   align-items: center;
-  margin-bottom: 640px;
+ 
 }
 #gucchih3 {
   font-size: 20px;
@@ -252,6 +255,7 @@ hr {
   display: flex;
   align-items: center;
   margin-top: 50px;
+  border:px solid red;
 }
 #maintwo > div {
   border: px solid red;
@@ -367,5 +371,7 @@ hr {
 }
 
 #last {
-  border: 1px solid red;
+  border: px solid red;
+  width: 50% ;
+  height: auto;
 }
