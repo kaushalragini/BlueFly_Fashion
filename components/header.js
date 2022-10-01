@@ -22,11 +22,11 @@ const headerHtml = () => {
   return `
     <div id="fb">
     <div>
-        <a href="index.html"><img class="bllogo" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141">
+        <a href="index.html"><img class="bllogo" id="log" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141">
         </a>
     </div>
     <div id="icon">
-        <div><i id="usr" class="fa-regular fa-user fa-2x"></i></div>
+        <div><i id="usr"class="fa-regular fa-circle-user fa-2x"></i></div>
         <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
     <div id="car">CART</div>
@@ -34,7 +34,7 @@ const headerHtml = () => {
   </div>
   
   <div id="main">
-    <button id="spi" class="openbtn"><i class="fa-solid fa-bag-shopping" ></i> </button>
+    <button id="spi" class="openbtn"><i class="fa-solid fa-cart-shopping"></i> </button>
   
   </div>
     </div>
