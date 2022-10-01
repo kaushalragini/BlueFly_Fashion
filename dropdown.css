@@ -3,11 +3,11 @@
 }
 
 .dropdown-check-list .anchor {
-  width: 200px;
-  position: relative;
+  width: 150px;
+  /* position: relative; */
   cursor: pointer;
   display: inline-block;
-  padding: 5px 50px 5px 10px;
+  padding: 10px 50px 10px 10px;
   border: 1px solid #ccc;
 }
 
