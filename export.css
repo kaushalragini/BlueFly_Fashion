@@ -10,15 +10,13 @@
   margin-top: 20px; */
 
   position: relative;
-  left: 0;
-  bottom: 0;
+  left: 0px;
+  bottom: 0px;
   width: 100%;
   padding-bottom: 0px;
   padding-top: 25px;
-  background-color: #e6e6e6;
-  color: #000;
-  margin-top: 20px;
-  
+  background-color: rgb(230, 230, 230);
+  color: rgb(102 98 98);
 }
 #container {
   display: grid;
@@ -137,13 +135,17 @@ input {
   margin-bottom: 22px;
 }
 a {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: black;
+  font-weight: 200;
   text-decoration: none;
 }
 input {
-  height: 14px;
+  height: 5px;
   padding: 10px;
-  font-size: 20px;
-  width: 310px;
+  font-size: 14px;
+  width: 300px;
 }
 #btn {
   height: 35px;
@@ -162,7 +164,8 @@ input {
   margin-top: 40px;
 }
 #logo > a > img {
-  height: 30px;
+  height: 15px;
+  width: 20px;
 }
 #logo {
   margin-left: 610px;
@@ -171,8 +174,6 @@ input {
 #downmanlogodiv {
   text-align: right;
   padding: 10px;
-
-  
 }
 #downmanlogo {
   width: 60px;
@@ -182,12 +183,17 @@ input {
   border-radius: 50px;
   margin-left: 1000px;
 }
-a{
+a {
   color: black;
   font-weight: 400;
 }
-h1, .h1, h2, .h2, h3, .h3 {
-  font-family: Tiemann,serif;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: Tiemann, serif;
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 1;

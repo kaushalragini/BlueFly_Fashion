@@ -1,6 +1,7 @@
 #slider {
+  font-family: sans-serif;
+  font-size: 11px;
   text-align: center;
-
   color: white;
 }
 #slider > h4 {
