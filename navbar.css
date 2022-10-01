@@ -2,18 +2,25 @@
   margin: 0px;
   padding: 0px;
 }
+#log{
+  height: 40px;
+  width: 200px;
+  border: 0px solid red;
+  padding-bottom: 5px;
+ 
+}
 #manue {
   width: 100%;
   border: 0px solid red;
   /* width: 80%; */
   display: flex;
   width: 80%;
-  border: 0px solid red;
+
   /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
   margin: auto;
   justify-content: space-around;
-  font-size: 13px;
-  font-family: serif;
+  font-size: 15px;
+  
   height: 64px;
   /* color: #8c2121; */
   /* box-shadow: 0 0 1px #0003; */
@@ -23,6 +30,7 @@
   /* position: fixed; */
   background-color: #fff;
   width: 100%;
+  
 }
 .container {
   position: relative;
@@ -51,9 +59,9 @@
   visibility: hidden;
   transition: 1s;
   padding-bottom: 30px;
-
+  
   border: 0px solid red;
-
+  margin-top: 26px;
   background-color: #fff;
   padding-top: 30px;
 }
@@ -149,7 +157,7 @@
 #fb {
   border: 0px solid red;
   display: flex;
-  padding-left: 650px;
+  padding-left: 550px;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 0px;
@@ -161,19 +169,21 @@
   display: flex;
   gap: 8px;
   border: 0px solid blue;
-  width: 300px;
+  width: 150px;
   cursor: pointer;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 }
 
 #spi {
   border: 0px solid red;
-  width: 50px;
+  padding-top: 5px;
+ 
 }
 #usr{
   border: 0px solid red;
-  width: 50px;
-  padding-top: 7px;
+  
+
+ 
   
 
 }
@@ -247,7 +257,7 @@
 }
 
 #bro{
-  border: 0px solid red;
+  border: 0px solid black;
   margin-top: 20px;
   margin-left: 14px;
   
@@ -265,4 +275,7 @@
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+p{
+  font-family:Futura,sans-serif;
 }
