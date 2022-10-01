@@ -1,20 +1,5 @@
-let img = [
-  {
-    img: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1160127531_RLLZ_1_720x.jpg?v=1664100479",
-  },
-
-  {
-    img: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1160127531_RLLZ_2_720x.jpg?v=1664100481",
-  },
-
-  {
-    img: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1160127531_RLLZ_3_720x.jpg?v=1664100482",
-  },
-
-  {
-    img: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/gucci_women_belts221_0c1fb5a7-8acf-465b-95dc-0d920722dd26_720x.png?v=1664100484",
-  },
-];
+let data_to_display = JSON.parse(localStorage.getItem("productToShow"));
+let img = data_to_display.img;
 
 let bigimg = [
   {
@@ -23,53 +8,38 @@ let bigimg = [
 ];
 displayImg = () => {
   let productimg = document.getElementById("productimg");
-
   img.map(function (element) {
     let div = document.createElement("div");
     div.setAttribute("id", "firstdiv");
     let firstimg = document.createElement("img");
     firstimg.setAttribute("class", "smallimg");
-    firstimg.src = element.img;
+    firstimg.src = element;
     div.append(firstimg);
     productimg.append(div);
   });
 };
 displayImg();
 
-bigImg = () => {
-  let bi = document.getElementById("bigimg");
-  bigimg.map(function (ele) {
-    let div = document.createElement("div");
-    div.setAttribute("id", "bigimg");
-    let secim = document.createElement("img");
-    secim.setAttribute("id", "Productimg");
-    secim.src = ele.img;
-    div.append(secim);
-    bi.append(div);
-  });
-};
-// bigImg();
+// var productImg = document.getElementById("Productimg");
+// var smallImg = document.getElementsByClassName("smallimg");
+// console.log(productImg);
+// console.log(smallImg[0].currentSrc);
 
-var productImg = document.getElementById("Productimg");
-var smallImg = document.getElementsByClassName("smallimg");
-console.log(productImg);
-console.log(smallImg[0].currentSrc);
+// smallImg[0].addEventListener("click", function () {
+//   productImg.src = smallImg[0].currentSrc;
+// });
 
-smallImg[0].addEventListener("click", function () {
-  productImg.src = smallImg[0].currentSrc;
-});
+// smallImg[1].addEventListener("click", function () {
+//   productImg.src = smallImg[1].currentSrc;
+// });
 
-smallImg[1].addEventListener("click", function () {
-  productImg.src = smallImg[1].currentSrc;
-});
+// smallImg[2].addEventListener("click", function () {
+//   productImg.src = smallImg[2].currentSrc;
+// });
 
-smallImg[2].addEventListener("click", function () {
-  productImg.src = smallImg[2].currentSrc;
-});
-
-smallImg[3].addEventListener("click", function () {
-  productImg.src = smallImg[3].currentSrc;
-});
+// smallImg[3].addEventListener("click", function () {
+//   productImg.src = smallImg[3].currentSrc;
+// });
 
 let Alsolike = [
   {
@@ -134,30 +104,16 @@ displayNextdiv = () => {
   });
 };
 displayNextdiv();
-var productImg = document.getElementById("Productimg");
-console.log(productImg);
+let productImg = document.querySelector("#Productimg");
+console.log("productImg => ", productImg);
 var smallImg = document.getElementsByClassName("smallimg");
 
-console.log(smallImg[0]);
-
-smallImg[0].addEventListener("click", function () {
-  productImg.src = smallImg[0].src;
-});
-
-smallImg[1].addEventListener("click", function () {
-  productImg.src = smallImg[1].src;
-});
-
-smallImg[2].addEventListener("click", function () {
-  productImg.src = smallImg[2].src;
-});
-
-smallImg[3].addEventListener("click", function () {
-  productImg.src = smallImg[3].src;
-});
-
-let data_to_display = JSON.parse(localStorage.getItem("productToShow"));
-
+for (let i = 0; i < smallImg.length; i++) {
+  smallImg[i].addEventListener("click", () => {
+    console.log("small images = > ", smallImg[i].src);
+    productImg.src = smallImg[i].src;
+  });
+}
 const displayProduct = () => {
   let bigImg = document.querySelector("#bigimg");
   let img = document.createElement("img");
@@ -175,9 +131,9 @@ const displayProduct = () => {
   brandTitle.innerText = data_to_display.product_name;
   // detailSection.append(brandName, brandTitle);
 
-  let oldPrice = document.querySelector(".span1");
+  let oldPrice = document.querySelector(".span2");
   oldPrice.innerText = data_to_display.new_price;
-  let newPrice = document.querySelector(".span2");
+  let newPrice = document.querySelector(".span1");
   newPrice.innerText = data_to_display.previousprice;
 };
 
@@ -185,46 +141,49 @@ displayProduct();
 
 document.querySelector("#ATC").addEventListener("click", () => {
   let data_to_display = JSON.parse(localStorage.getItem("productToShow"));
-  // console.log(data_to_display);
-  let productAddedToCart = JSON.parse(localStorage.getItem("cart_items")) || [];
+  let cartData = JSON.parse(localStorage.getItem("cart_items")) || {};
 
-  if (productAddedToCart.length === 0) {
-    let newObj = {};
-    newObj[JSON.stringify(data_to_display)] = 1;
-    productAddedToCart.push(newObj);
+  let productAddedToCart = {};
+  if (Object.keys(cartData).length === 0) {
+    productAddedToCart[data_to_display.id] = { count: 1, obj: data_to_display };
+    cartData = productAddedToCart;
   } else {
-    productAddedToCart.forEach((productObj, i) => {
-      console.log(productObj);
-      for (key in productObj) {
-        console.log(key);
-        key = JSON.parse(key);
-        if (productObj[key] === undefined) {
-          alert("aa");
-          let newObj = {};
-          newObj[JSON.stringify(data_to_display)] = 1;
-          productAddedToCart.push(newObj);
-        } else {
-          alert("bb");
-          console.log(productAddedToCart);
-          productAddedToCart[key]++;
-        }
+    let found = false;
+    for (key in cartData) {
+      if (Number(key) === Number(data_to_display.id)) {
+        cartData[key]["count"]++;
+        found = true;
       }
-    });
+    }
+    if (found === false) {
+      cartData[data_to_display.id] = { count: 1, obj: data_to_display };
+    }
   }
 
-  localStorage.setItem("cart_items", JSON.stringify(productAddedToCart));
-});
+  localStorage.setItem("cart_items", JSON.stringify(cartData));
+  // if (productAddedToCart.length === 0) {
+  //   let newObj = {};
+  //   newObj[JSON.stringify(data_to_display)] = 1;
+  //   productAddedToCart.push(newObj);
+  // } else {
+  //   productAddedToCart.forEach((productObj, i) => {
+  //     console.log(productObj);
+  //     for (key in productObj) {
+  //       console.log(key);
+  //       key = JSON.parse(key);
+  //       if (productObj[key] === undefined) {
+  //         alert("aa");
+  //         let newObj = {};
+  //         newObj[JSON.stringify(data_to_display)] = 1;
+  //         productAddedToCart.push(newObj);
+  //       } else {
+  //         alert("bb");
+  //         console.log(productAddedToCart);
+  //         productAddedToCart[key]++;
+  //       }
+  //     }
+  //   });
+  // }
 
-/*
-{a:1, b:3,c:4}
-aa = [
-  {{a:1, b:3,c:4}:1},
-  {{a:1, b:1,c:4}:1},
-  {{a:2, b:2}:2}
-]
-aa.forEach(function(ele, i){
-  for (let key in ele){
-
-  }
+  // localStorage.setItem("cart_items", JSON.stringify(productAddedToCart));
 });
-*/

@@ -1,19 +1,19 @@
 function footer() {
   return `<div id="container">
     <div>
-        <a href="products.html"><img src="https://media.istockphoto.com/photos/stack-of-blue-jeans-on-wooden-shelf-beauty-and-fashion-clothing-picture-id1154077427?b=1&k=20&m=1154077427&s=170667a&w=0&h=7cvIYsVy4x6xHcmN3p1iwYcTAriljA7wP9UkD5ts4xo=" alt=""></a>
+        <a href="products.html?q=men_clothing-jeans"><img src="https://media.istockphoto.com/photos/stack-of-blue-jeans-on-wooden-shelf-beauty-and-fashion-clothing-picture-id1154077427?b=1&k=20&m=1154077427&s=170667a&w=0&h=7cvIYsVy4x6xHcmN3p1iwYcTAriljA7wP9UkD5ts4xo=" alt=""></a>
         
 <h2>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h2>
 <p>From Hudson Jeans, Joe's Jeans, J Brand & More</p>
-<a href="products.html"><p id="button">SHOP DENIM</p></a>
+<a href="products.html?q=men_clothing-jeans"><p id="button">SHOP DENIM</p></a>
 
     </div>
     <div>
-      <a href="products.html">  <img src="http://www.brooklynblonde.com/wp-content/uploads/2019/04/9CIOe.jpg" alt=""></a>
+      <a href="products.html?q=men_clothing-jeans">  <img src="http://www.brooklynblonde.com/wp-content/uploads/2019/04/9CIOe.jpg" alt=""></a>
       
 <h2>UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS</h2>
 <p>Must-Haves From Halston, BCBGMAXAZRIA, Iro & More</p>
-<a href="products.html"><p  id="button">SHOP JUMPSUITS</p></a>
+<a href="products.html?q=women_clothing-jumpsuit"><p  id="button">SHOP JUMPSUITS</p></a>
 
     </div>
     <div>

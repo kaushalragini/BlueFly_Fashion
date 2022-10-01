@@ -2,12 +2,11 @@
   margin: 0px;
   padding: 0px;
 }
-#log{
+#log {
   height: 40px;
   width: 200px;
   border: 0px solid red;
   padding-bottom: 5px;
- 
 }
 #manue {
   width: 100%;
@@ -20,7 +19,7 @@
   margin: auto;
   justify-content: space-around;
   font-size: 15px;
-  
+
   height: 64px;
   /* color: #8c2121; */
   /* box-shadow: 0 0 1px #0003; */
@@ -30,7 +29,6 @@
   /* position: fixed; */
   background-color: #fff;
   width: 100%;
-  
 }
 .container {
   position: relative;
@@ -59,7 +57,7 @@
   visibility: hidden;
   transition: 1s;
   padding-bottom: 30px;
-  
+
   border: 0px solid red;
   margin-top: 26px;
   background-color: #fff;
@@ -177,15 +175,11 @@
 #spi {
   border: 0px solid red;
   padding-top: 5px;
- 
 }
-#usr{
+#usr {
   border: 0px solid red;
-  
-
- 
-  
-
+  /* width: 50px;
+  padding-top: 7px; */
 }
 .bllogo {
   width: 150px;
@@ -214,12 +208,11 @@
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color:black; /* Black*/
+  /* background-color: black; Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  border: 0px solid red;
-
+  /* border: 0px solid red; */
 }
 
 /* The sidebar links */
@@ -227,7 +220,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color:black;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -250,32 +243,32 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color:white;
- 
+  background-color: white;
+
   border: none;
-  
 }
 
-#bro{
+#bro {
   border: 0px solid black;
   margin-top: 20px;
   margin-left: 14px;
-  
 }
-
-
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left 0.5s; /* If you want a transition effect */
   /* padding: 20px; */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
-p{
-  font-family:Futura,sans-serif;
+p {
+  font-family: Futura, sans-serif;
 }
