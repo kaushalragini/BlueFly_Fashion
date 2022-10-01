@@ -18,6 +18,7 @@
   background-color: #e6e6e6;
   color: #000;
   margin-top: 20px;
+  
 }
 #container {
   display: grid;
@@ -34,8 +35,8 @@
   text-align: center;
 }
 #container > div > a > img {
-  width: 340px;
-  height: 300px;
+  width: 380px;
+  height: 340px;
 }
 #button {
   padding: 10px;
@@ -44,7 +45,9 @@
   letter-spacing: 5px;
   width: fit-content;
   margin: auto;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #e8e8e1;
 }
 p {
   margin: 0 0 15px;
@@ -168,6 +171,8 @@ input {
 #downmanlogodiv {
   text-align: right;
   padding: 10px;
+
+  
 }
 #downmanlogo {
   width: 60px;
@@ -175,4 +180,16 @@ input {
   background-color: red;
   border: solid 2px red;
   border-radius: 50px;
+  margin-left: 1000px;
+}
+a{
+  color: black;
+  font-weight: 400;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: Tiemann,serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1;
+  text-transform: uppercase;
 }
