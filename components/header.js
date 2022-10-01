@@ -1,3 +1,79 @@
+const showCartItems = () => {
+  let lsItems = JSON.parse(localStorage.getItem("cart_items"));
+  let mainDiv = document.querySelector("#bro");
+
+  mainDiv.innerText = "";
+  let total_price = 0;
+  for (let key in lsItems) {
+    let subDiv = document.createElement("div");
+    subDiv.setAttribute("class", "sub_div");
+    let ele = lsItems[key]["obj"];
+    let aa = ele.new_price.split("$")[1].replace(",", "");
+    total_price += Number(aa);
+
+    let img = document.createElement("img");
+    img.setAttribute("src", ele.img[0]);
+    img.setAttribute("class", "wallet_slider_img");
+
+    let prd_name = document.createElement("p");
+    prd_name.innerText = ele.product_name;
+    prd_name.setAttribute("class", "wallet_slider_name");
+
+    let description = ele["product_description"].split();
+    ele["product_description"][0] +
+      " " +
+      ele["product_description"][1] +
+      " " +
+      ele["product_description"][2];
+    let prd_desc = document.createElement("p");
+    // prd_desc.innerText = description;
+    let qty = document.createElement("p");
+    qty.innerText = lsItems[key]["count"];
+    qty.setAttribute("class", "qty");
+
+    let removeBtn = document.createElement("button");
+    removeBtn.setAttribute("class", "remove_btn");
+    removeBtn.innerText = "Remove";
+
+    removeBtn.addEventListener("click", () => {
+      let lsItems = JSON.parse(localStorage.getItem("cart_items"));
+      for (let k in lsItems) {
+        if (key === k) {
+          if (Number(lsItems[k]["count"]) === 1) {
+            delete lsItems[k];
+          } else {
+            lsItems[k]["count"]--;
+          }
+          break;
+        }
+      }
+      localStorage.setItem("cart_items", JSON.stringify(lsItems));
+      showCartItems();
+    });
+
+    let price = document.createElement("p");
+    price.innerText = ele["new_price"];
+
+    subDiv.append(img, prd_name, price, qty);
+    mainDiv.append(subDiv, removeBtn);
+  }
+  let subTotal = document.createElement("p");
+  subTotal.innerText = `SUBTOTAL \t\t\t${total_price}`;
+  subTotal.setAttribute("class", "subtotal_p");
+  let fixedText = document.createElement("p");
+  fixedText.innerText =
+    "Shipping, taxes, and discounts codes calculated at checkout.";
+  let checkOutBtn = document.createElement("button");
+  checkOutBtn.setAttribute("class", "checkoutbtn");
+  checkOutBtn.innerText = "CHECK OUT";
+
+  checkOutBtn.addEventListener("click", () => {
+    window.location = "walletdetails.html";
+  });
+
+  mainDiv.append(subTotal, fixedText, checkOutBtn);
+};
+
 const bagSideOpen = () => {
   document.querySelector("#spi").addEventListener("click", () => {
     document.querySelector("#mySidebar").style.width = "350px";
@@ -43,7 +119,7 @@ const headerHtml = () => {
     <div class="container">
         <ul>
             <li>
-                <a href="products.html">CLOTHING</a>
+                <a href="products.html?q=all_clothing">CLOTHING</a>
                  <div class="meg">
                     <div id="box1">
                         <div>
@@ -52,42 +128,42 @@ const headerHtml = () => {
                             <p>up to 80% off</p>
                         </div>
                         <div>
-                            <h4 class="sp">WOMEN'S CLOTHING</h4>
+                            <h4 class="sp"><a href="products.html?q=women_clothing">WOMEN'S CLOTHING</a></h4>
                             <p>
-                                Activewear
-                                Coats & Jackets
-                                Dresses
-                                Jeans & Denim
-                                Jumpsuits & Rompers
-                                Lingerie & Hosiery
-                                Loungewear & Sleepwear
-                                Pants & Leggings
-                                Shorts
-                                Skirts
-                                Sweaters
-                                Sweatshirts & Hoodies
-                                Swimwear & Coverups
-                                Tops & Tees             
+                                <a href="products.html?q=women_clothing-activewear">Activewear</a>
+                                <a href="products.html?q=women_clothing-coat_jacket">Coats & Jackets</a>
+                                <a href="products.html?q=women_clothing-dresses">Dresses</a>
+                                <a href="products.html?q=women_clothing-jeans">Jeans & Denim</a>
+                                <a href="products.html?q=women_clothing-jumpsuit">Jumpsuits & Rompers</a>
+                                <a href="products.html?q=women_clothing-lingerie">Lingerie & Hosiery</a>
+                                <a href="products.html?q=women_clothing-Loungewear">Loungewear & Sleepwear</a>
+                                <a href="products.html?q=women_clothing-Pants">Pants & Leggings</a>
+                                <a href="products.html?q=women_clothing-Shorts">Shorts</a>
+                                <a href="products.html?q=women_clothing-Skirts">Skirts</a>
+                                <a href="products.html?q=women_clothing-Sweaters">Sweaters</a>
+                                <a href="products.html?q=women_clothing-Sweatshirts">Sweatshirts & Hoodies</a>
+                                <a href="products.html?q=women_clothing-Swimwear">Swimwear & Coverups</a>
+                                <a href="products.html?q=women_clothing-Tops">Tops & Tees</a>
                             </p>
                         </div>
                         <div>
-                            <h4 class="sp">MAN'S CLOTHING</h4>
+                            <h4 class="sp"><a href="products.html?q=men_clothing">MAN'S CLOTHING</a></h4>
                             <P>
-                                Activewear
-                                Casual Button-Down Shirts
-                                Coats & Jackets
-                                Dress Shirts
-                                Jeans & Denim
-                                Pants
-                                Polo Shirts
-                                Shorts
-                                Sport Coats & Blazers
-                                Suits & Separates
-                                Sweaters
-                                Sweatshirts & Hoodies
-                                Swimwear
-                                T-Shirts
-                                Underwear & Socks
+                                <a href="products.html?q=men_clothing">Activewear</a>
+                                <a href="products.html?q=men_clothing-casual_shirt">Casual Button-Down Shirts</a>
+                                <a href="products.html?q=men_clothing-jacket">Coats & Jackets</a>
+                                <a href="products.html?q=men_clothing-dress">Dress Shirts</a>
+                                <a href="products.html?q=men_clothing-jeans">Jeans & Denim</a>
+                                <a href="products.html?q=men_clothing-pants">Pants</a>
+                                <a href="products.html?q=men_clothing-shirt">Polo Shirts</a>
+                                <a href="products.html?q=men_clothing-shorts">Shorts</a>
+                                <a href="products.html?q=men_clothing-blazer">Sport Coats & Blazers</a>
+                                <a href="products.html?q=men_clothing-suits">Suits & Separates</a>
+                                <a href="products.html?q=men_clothing-sweaters">Sweaters</a>
+                                <a href="products.html?q=men_clothing-swetshirt">Sweatshirts & Hoodies</a>
+                                <a href="products.html?q=men_clothing-swimwear">Swimwear</a>
+                                <a href="products.html?q=men_clothing-tshirt">T-Shirts</a>
+                                <a href="products.html?q=men_clothing">Underwear & Socks</a>
                             </P>
                         </div>
                     </div>
@@ -494,6 +570,7 @@ export {
   bagSideClose,
   bagSideOpen,
   cartsliderhtml,
+  showCartItems,
 };
 
 //<div id="bottomblack">WELCOME TO BLUEFLY: luxury brands at disscounted prices</div>

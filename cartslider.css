@@ -71,3 +71,30 @@
     font-size: 18px;
   }
 }
+img {
+  width: 80px;
+}
+.sub_div {
+  display: flex;
+}
+
+p {
+  text-overflow: revert;
+  font-size: small;
+  padding-right: 10px;
+}
+
+.subtotal_p {
+  font-size: 16px;
+  tab-size: 2;
+}
+
+.remove_btn {
+  width: 75px;
+  margin: 20px;
+  background-color: black;
+  color: white;
+  border: 0px;
+  padding: 5px;
+  cursor: pointer;
+}

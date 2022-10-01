@@ -37,12 +37,12 @@
       <div id="head">
         <div class="wlanding_left"></div>
         <div class="wlanding_right">
-          <h2>All Clothing</h2>
-          <p>Showing 83446 results for "All Clothing"</p>
+          <h2 id="description"></h2>
+          <p id="description-p"></p>
         </div>
       </div>
       <div id="headbottom">
-        <div class="first">Showing 83446 results for "All Clothing"</div>
+        <!-- <div class="first">Showing 83446 results for "All Clothing"</div> -->
         <div class="middle"></div>
         <div class="third">
           <label for="bestseller">Trending:</label>
@@ -111,17 +111,21 @@
           <div id="list5" class="dropdown-check-list" tabindex="100">
             <span class="anchor">COLOR</span>
             <ul class="items">
-              <li><input type="checkbox" />Women</li>
-              <li><input type="checkbox" />Men</li>
-              <li><input type="checkbox" />Shop All</li>
+              <li><input type="checkbox" />Black(17751)</li>
+              <li><input type="checkbox" />Blue(16413)</li>
+              <li><input type="checkbox" />Brown(4492)</li>
+              <li><input type="checkbox" />Green(5160)</li>
+              <li><input type="checkbox" />Grey(5193)</li>
             </ul>
           </div>
           <div id="list6" class="dropdown-check-list" tabindex="100">
             <span class="anchor">SIZE</span>
             <ul class="items">
-              <li><input type="checkbox" />Small</li>
-              <li><input type="checkbox" />Medium</li>
-              <li><input type="checkbox" />Large</li>
+              <li><input type="checkbox" />One Size(192)</li>
+              <li><input type="checkbox" />L(3276)</li>
+              <li><input type="checkbox" />M(3584)</li>
+              <li><input type="checkbox" />XL(2607)</li>
+              <li><input type="checkbox" />XS(788)</li>
             </ul>
           </div>
           <div id="list7" class="dropdown-check-list" tabindex="100">
@@ -141,11 +145,10 @@
             </ul>
           </div>
           <div id="list9" class="dropdown-check-list" tabindex="100">
-            <span class="anchor">RODUCT CONDITION</span>
+            <span class="anchor">PRODUCT CONDITION</span>
             <ul class="items">
-              <li><input type="checkbox" />Women</li>
-              <li><input type="checkbox" />Men</li>
-              <li><input type="checkbox" />Shop All</li>
+              <li><input type="checkbox" />New(79115)</li>
+              <li><input type="checkbox" />Preowned - Fair(3311)</li>
             </ul>
           </div>
           <div id="list10" class="dropdown-check-list" tabindex="100">
@@ -159,9 +162,7 @@
           <div id="list11" class="dropdown-check-list" tabindex="100">
             <span class="anchor">SALE</span>
             <ul class="items">
-              <li><input type="checkbox" />Women</li>
-              <li><input type="checkbox" />Men</li>
-              <li><input type="checkbox" />Shop All</li>
+              <li><input type="checkbox" />Sale(1812)</li>
             </ul>
           </div>
           <div id="list12" class="dropdown-check-list" tabindex="100">
@@ -189,6 +190,7 @@
     bagSideClose,
     bagSideOpen,
     cartsliderhtml,
+    showCartItems,
   } from "./components/header.js";
   document.querySelector("#nav_header").innerHTML = headerHtml();
   document.querySelector("#mySidebar").innerHTML = cartsliderhtml();
@@ -196,9 +198,13 @@
   topSliderTxt();
   bagSideOpen();
   bagSideClose();
+  cartsliderhtml();
+  showCartItems();
 </script>
 
 <script type="module">
   import footer from "./components/export.js";
   document.querySelector("#page_footer").innerHTML = footer();
 </script>
+
+<script type="module" src="./components/data.js"></script>

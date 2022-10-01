@@ -170,12 +170,10 @@
   border: 0px solid red;
   width: 50px;
 }
-#usr{
+#usr {
   border: 0px solid red;
   width: 50px;
   padding-top: 7px;
-  
-
 }
 .bllogo {
   width: 150px;
@@ -204,12 +202,11 @@
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color:black; /* Black*/
+  /* background-color: black; Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  border: 0px solid red;
-
+  /* border: 0px solid red; */
 }
 
 /* The sidebar links */
@@ -217,7 +214,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color:black;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -240,29 +237,29 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color:white;
- 
+  background-color: white;
+
   border: none;
-  
 }
 
-#bro{
+#bro {
   border: 0px solid red;
   margin-top: 20px;
   margin-left: 14px;
-  
 }
-
-
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left 0.5s; /* If you want a transition effect */
   /* padding: 20px; */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
