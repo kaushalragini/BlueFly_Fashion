@@ -1,13 +1,12 @@
 
 
-<h2>  PROJECT--Modesense </h2>
+<h2>  PROJECT--BlueFly</h2>
 <hr/>
 <p>e-commerce website for fashion products </p>
-Live : https://ephemeral-khapse-ae9cfa.netlify.app
+Live :https://resilient-peony-306a94.netlify.app
 <h2> Features </h2>
 <hr/>
 <li>Dynamic Navbar.</li>
-
 <li>Login and Sign up Feature.</li>
 <li>Product page with interactive scrollbars.</li>
 <li>Dynamic cart page.</li>
