@@ -21,8 +21,8 @@ Live :https://resilient-peony-306a94.netlify.app
 <p>The page contains dynamic navbar functionality which is then exported to each section of the website, the navbar contains the account section in which we need to signup or login to the website for purchasing any product. It contains different products whicch will be purchased on single click.</p>
 <hr/>
 <h1> 2.  Account Section: </h1>
+<img width="1402" alt="Screenshot 2022-11-30 at 12 20 51 PM" src="https://user-images.githubusercontent.com/110046267/204727529-f54acfa6-b61b-4fb5-88ef-374f13bca650.png">
 
-<img width="1014" alt="Screenshot 2022-11-29 at 8 23 26 AM" src="https://user-images.githubusercontent.com/110046267/204427404-98e9dded-7bd5-4b57-bdd7-c4660dda962b.png">
 <p>Whenever an item is purchased we first need to create an account in the website and in this section we also need to provide some details to create the account and after creating we need to login for futher process</p>
 
 <hr/>
