@@ -27,7 +27,7 @@ Live :https://resilient-peony-306a94.netlify.app
 
 <hr/>
 <h1> 3.  Product section: </h1>
-<img width="1439" alt="Screenshot 2022-11-29 at 8 33 35 AM" src="https://user-images.githubusercontent.com/110046267/204428586-045d9e60-2b8f-4c50-bd4b-e9c560c8f803.png">
+<img width="1381" alt="Screenshot 2022-11-30 at 12 22 16 PM" src="https://user-images.githubusercontent.com/110046267/204727810-d97364ce-9a30-475b-8392-ad2cc395290d.png">
 
 <p>The page contains all types of product which you want see acccoring to your selection criteria</p>
 
